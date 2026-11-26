@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "dataset": "goa_dev",
+    "schema_version": 1,
+    "data_source": "synthetic_dev",
+    "generated_at": "2026-10-02T15:19:15.676824Z",
+    "generated_by": "app.data.dev_data",
+    "seed": 42,
+    "disclaimer": "SYNTHETIC DEVELOPMENT DATA - NOT REAL TRAVEL INFORMATION. Landmark names/locations are approximate; all other attributes are generated for testing only."
+  },
+  "records": [
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.3,
+      "id": "goa",
+      "name": "Goa",
+      "state": "Goa",
+      "country": "India",
+      "center": {
+        "latitude": 15.4909,
+        "longitude": 73.8278
+      },
+      "aliases": [
+        "Goa India",
+        "Goa, India"
+      ],
+      "timezone": "Asia/Kolkata",
+      "best_months": [
+        1,
+        2,
+        3,
+        11,
+        12
+      ],
+      "description": "SYNTHETIC DEV RECORD. Approximate centre (Panaji)."
+    }
+  ]
+}

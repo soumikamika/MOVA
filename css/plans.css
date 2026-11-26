@@ -1,0 +1,2195 @@
+/* =====================================================
+   MOVA — MY PLANS
+===================================================== */
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.plans-page {
+    background: var(--cream);
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.plans-header {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+
+    min-height: 570px;
+
+    border-bottom: var(--border-thick);
+}
+
+
+.plans-header-content {
+    padding: 90px 7%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.plans-header-content h1 {
+    max-width: 850px;
+
+    margin: 20px 0 25px;
+
+    font-size: clamp(4rem, 8vw, 8rem);
+    line-height: 0.82;
+
+    letter-spacing: -0.065em;
+
+    text-transform: uppercase;
+}
+
+
+.plans-header-content h1 span {
+    display: block;
+
+    color: var(--red);
+}
+
+
+.plans-header-content p {
+    max-width: 550px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   CREATE PLAN PANEL
+===================================================== */
+
+.plans-header-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 45px;
+
+    background: var(--teal);
+
+    border-left: var(--border-thick);
+}
+
+
+.create-plan-card {
+    width: min(100%, 430px);
+
+    padding: 38px;
+
+    background: var(--yellow);
+
+    border: var(--border-thick);
+
+    box-shadow: 9px 9px 0 var(--ink);
+
+    transform: rotate(1deg);
+}
+
+
+.create-plan-label {
+    display: block;
+
+    margin-bottom: 18px;
+
+    font-size: 0.7rem;
+    font-weight: 900;
+
+    letter-spacing: 0.12em;
+}
+
+
+.create-plan-card h2 {
+    margin: 0 0 30px;
+
+    font-size: clamp(2.5rem, 4vw, 4rem);
+
+    line-height: 0.9;
+
+    letter-spacing: -0.05em;
+}
+
+
+.create-plan-card .btn {
+    width: 100%;
+}
+
+
+/* =====================================================
+   EMPTY PLANS SECTION
+===================================================== */
+
+.plans-empty-section {
+    padding: 100px 7%;
+
+    background: var(--paper);
+
+    border-bottom: var(--border-thick);
+}
+
+
+.empty-plan-content {
+    min-height: 480px;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 60px 20px;
+}
+
+
+.empty-plan-symbol {
+    width: 85px;
+    height: 85px;
+
+    display: grid;
+    place-items: center;
+
+    margin-bottom: 30px;
+
+    border: 4px solid var(--ink);
+
+    background: var(--yellow);
+
+    font-size: 2rem;
+
+    box-shadow: 6px 6px 0 var(--ink);
+
+    transform: rotate(-7deg);
+}
+
+
+.empty-plan-content h2 {
+    margin: 0 0 22px;
+
+    font-size: clamp(4rem, 8vw, 8rem);
+
+    line-height: 0.8;
+
+    letter-spacing: -0.065em;
+
+    text-transform: uppercase;
+}
+
+
+.empty-plan-content h2 span {
+    color: var(--red);
+}
+
+
+.empty-plan-content p {
+    max-width: 480px;
+
+    margin: 0 0 30px;
+
+    color: var(--muted);
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================================
+   PLANNING INTRO
+===================================================== */
+
+.plans-intro-section {
+    padding: 100px 7%;
+
+    background: var(--ink);
+
+    color: var(--paper);
+}
+
+
+.plans-intro-grid {
+    display: grid;
+
+    grid-template-columns: 1.2fr 0.8fr;
+
+    gap: 70px;
+
+    align-items: end;
+
+    margin-top: 20px;
+
+    margin-bottom: 65px;
+}
+
+
+.plans-intro-grid h2 {
+    margin: 0;
+
+    font-size: clamp(3rem, 6vw, 6.5rem);
+
+    line-height: 0.85;
+
+    letter-spacing: -0.06em;
+
+    text-transform: uppercase;
+}
+
+
+.plans-intro-grid h2 span {
+    display: block;
+
+    color: var(--yellow);
+}
+
+
+.plans-intro-copy {
+    max-width: 430px;
+}
+
+
+.plans-intro-copy p {
+    margin: 0 0 18px;
+
+    color: #d8d0c2;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+}
+
+
+.plans-intro-copy p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =====================================================
+   PLANNING PRINCIPLES
+===================================================== */
+
+.planning-principles {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 3px;
+
+    background: var(--paper);
+
+    border: var(--border-thick);
+}
+
+
+.planning-principle {
+    min-height: 250px;
+
+    padding: 25px;
+
+    color: var(--ink);
+
+    background: var(--cream);
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+}
+
+
+.planning-principle:nth-child(1) {
+    background: #BADFDB;
+}
+
+
+.planning-principle:nth-child(2) {
+    background: #FFA4A4;
+}
+
+
+.planning-principle:nth-child(3) {
+    background: #E7B83E;
+}
+
+
+.planning-principle:nth-child(4) {
+    background: #F7F0DD;
+}
+
+
+.principle-number {
+    font-size: 0.7rem;
+
+    font-weight: 900;
+
+    letter-spacing: 0.08em;
+}
+
+
+.planning-principle strong {
+    margin-top: auto;
+    margin-bottom: 10px;
+
+    font-size: 1rem;
+
+    letter-spacing: 0.04em;
+}
+
+
+.planning-principle p {
+    max-width: 250px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 0.88rem;
+
+    line-height: 1.55;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .plans-header {
+        grid-template-columns: 1fr;
+    }
+
+
+    .plans-header-action {
+        border-left: 0;
+
+        border-top: var(--border-thick);
+
+        padding: 60px 7%;
+    }
+
+
+    .plans-intro-grid {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+
+    .planning-principles {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .plans-header-content {
+        padding: 70px 6%;
+    }
+
+
+    .plans-header-content h1 {
+        font-size: clamp(3.5rem, 15vw, 5rem);
+    }
+
+
+    .plans-header-action {
+        padding: 45px 6%;
+    }
+
+
+    .create-plan-card {
+        padding: 28px;
+    }
+
+
+    .plans-empty-section {
+        padding: 75px 6%;
+    }
+
+
+    .empty-plan-content {
+        min-height: 420px;
+
+        padding: 40px 10px;
+    }
+
+
+    .empty-plan-content h2 {
+        font-size: clamp(3.5rem, 16vw, 5rem);
+    }
+
+
+    .empty-plan-symbol {
+        width: 70px;
+        height: 70px;
+    }
+
+
+    .plans-intro-section {
+        padding: 75px 6%;
+    }
+
+
+    .plans-intro-grid h2 {
+        font-size: clamp(2.8rem, 13vw, 4.5rem);
+    }
+
+
+    .planning-principles {
+        grid-template-columns: 1fr;
+    }
+
+
+    .planning-principle {
+        min-height: 210px;
+    }
+
+}
+
+/* =====================================================
+   CREATE PLAN PAGE — COMPACT UI
+===================================================== */
+
+.create-plan-page {
+    background: var(--cream);
+}
+
+
+/* =====================================================
+   PLANNER HEADER
+===================================================== */
+
+.planner-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+
+    padding: 55px 7% 48px;
+
+    background: var(--paper);
+    border-bottom: var(--border-thick);
+}
+
+.planner-header h1 {
+    margin: 12px 0 14px;
+
+    font-size: clamp(3rem, 5.5vw, 5.5rem);
+    line-height: 0.88;
+    letter-spacing: -0.055em;
+    text-transform: uppercase;
+}
+
+.planner-header h1 span {
+    color: var(--red);
+}
+
+.planner-header p {
+    max-width: 520px;
+    margin: 0;
+
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.planner-step-indicator {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+
+    padding: 9px 13px;
+
+    border: 3px solid var(--ink);
+    background: var(--yellow);
+
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+
+.planner-step-current {
+    font-size: 1.4rem;
+}
+
+
+/* =====================================================
+   FORM SECTIONS
+===================================================== */
+
+.create-plan-form {
+    background: var(--cream);
+}
+
+.planner-section {
+    padding: 55px 7%;
+    border-bottom: 2px solid rgba(25, 22, 20, 0.25);
+}
+
+.planner-section-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+
+    margin-bottom: 28px;
+}
+
+.planner-section-number {
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: grid;
+    place-items: center;
+
+    border: 2px solid var(--ink);
+    background: var(--yellow);
+
+    font-size: 0.65rem;
+    font-weight: 900;
+
+    box-shadow: 2px 2px 0 var(--ink);
+}
+
+.planner-label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--muted);
+
+    font-size: 0.62rem;
+    font-weight: 900;
+    letter-spacing: 0.12em;
+}
+
+.planner-section-heading h2 {
+    margin: 0;
+
+    font-size: clamp(1.9rem, 3.5vw, 3.2rem);
+    line-height: 0.95;
+    letter-spacing: -0.045em;
+    text-transform: uppercase;
+}
+
+.planner-section-heading h2 span {
+    color: var(--red);
+}
+
+
+/* =====================================================
+   DESTINATION
+===================================================== */
+
+.destination-input-area {
+    max-width: 780px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 7px;
+
+    font-size: 0.62rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+}
+
+.planner-input {
+    width: 100%;
+    min-height: 54px;
+
+    padding: 13px 16px;
+
+    border: 2px solid var(--ink);
+    background: var(--paper);
+    color: var(--ink);
+
+    font: inherit;
+    font-size: 0.9rem;
+
+    outline: none;
+
+    box-shadow: 3px 3px 0 var(--ink);
+}
+
+.planner-input:focus {
+    box-shadow: 4px 4px 0 var(--red);
+}
+
+.planner-input::placeholder {
+    color: #8b847a;
+}
+
+
+/* =====================================================
+   DESTINATION RESULTS
+===================================================== */
+
+.destination-results {
+    margin-top: 8px;
+
+    border: 2px solid var(--ink);
+    background: var(--paper);
+
+    box-shadow: 3px 3px 0 var(--ink);
+}
+
+.destination-result {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    padding: 12px 14px;
+
+    border: 0;
+    border-bottom: 1px solid rgba(25, 22, 20, 0.25);
+
+    background: transparent;
+    color: var(--ink);
+
+    font: inherit;
+    text-align: left;
+
+    cursor: pointer;
+}
+
+.destination-result:last-child {
+    border-bottom: 0;
+}
+
+.destination-result:hover {
+    background: var(--yellow);
+}
+
+.destination-result-name {
+    font-size: 0.82rem;
+    font-weight: 900;
+}
+
+.destination-result-region {
+    color: var(--muted);
+    font-size: 0.68rem;
+}
+
+.destination-no-results,
+.destination-selected {
+    padding: 13px;
+    font-size: 0.8rem;
+}
+
+.destination-selected {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    background: #BADFDB;
+}
+
+
+/* =====================================================
+   DATES
+===================================================== */
+
+.date-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 380px));
+    gap: 18px;
+}
+
+
+/* =====================================================
+   TRAVELLERS
+===================================================== */
+
+.traveller-selector {
+    max-width: 780px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 16px 18px;
+
+    border: 2px solid var(--ink);
+    background: var(--paper);
+
+    box-shadow: 3px 3px 0 var(--ink);
+}
+
+.traveller-info strong {
+    display: block;
+    margin-bottom: 3px;
+
+    font-size: 0.82rem;
+}
+
+.traveller-info span {
+    color: var(--muted);
+    font-size: 0.7rem;
+}
+
+.number-control {
+    display: flex;
+    align-items: center;
+
+    border: 2px solid var(--ink);
+}
+
+.number-control button {
+    width: 40px;
+    height: 40px;
+
+    border: 0;
+    background: var(--yellow);
+
+    color: var(--ink);
+
+    font: inherit;
+    font-size: 1.1rem;
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+.number-control output {
+    min-width: 45px;
+    height: 40px;
+
+    display: grid;
+    place-items: center;
+
+    border-left: 2px solid var(--ink);
+    border-right: 2px solid var(--ink);
+
+    background: var(--paper);
+
+    font-size: 0.85rem;
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   OPTION CARDS
+===================================================== */
+
+.option-grid {
+    max-width: 900px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.option-card {
+    position: relative;
+    cursor: pointer;
+}
+
+.option-card input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.option-card-content {
+    min-height: 82px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 15px;
+
+    border: 2px solid var(--ink);
+    background: var(--paper);
+
+    box-shadow: 3px 3px 0 var(--ink);
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease;
+}
+
+.option-card-content strong {
+    font-size: 0.75rem;
+    letter-spacing: 0.02em;
+}
+
+.option-card-content small {
+    margin-top: 4px;
+
+    color: var(--muted);
+    font-size: 0.65rem;
+}
+
+.option-card:hover .option-card-content {
+    transform: translateY(-2px);
+}
+
+.option-card input:checked + .option-card-content {
+    background: var(--yellow);
+
+    transform: translate(-2px, -2px);
+
+    box-shadow: 5px 5px 0 var(--ink);
+}
+
+.transport-grid {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+
+/* =====================================================
+   BUDGET
+===================================================== */
+
+.budget-input {
+    max-width: 420px;
+
+    display: flex;
+    align-items: center;
+
+    border: 2px solid var(--ink);
+    background: var(--paper);
+
+    box-shadow: 3px 3px 0 var(--ink);
+}
+
+.currency-symbol {
+    width: 48px;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+
+.budget-number-input {
+    width: 100%;
+    min-height: 54px;
+
+    padding: 8px 12px;
+
+    border: 0;
+    border-left: 2px solid var(--ink);
+
+    background: transparent;
+    color: var(--ink);
+
+    font: inherit;
+    font-size: 1.15rem;
+    font-weight: 900;
+
+    outline: none;
+}
+
+.field-note {
+    max-width: 500px;
+
+    margin: 12px 0 0;
+
+    color: var(--muted);
+
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+
+/* =====================================================
+   TAGS
+===================================================== */
+
+.tag-grid {
+    max-width: 900px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+
+.tag-option {
+    cursor: pointer;
+}
+
+.tag-option input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tag-option span {
+    display: block;
+
+    padding: 10px 14px;
+
+    border: 2px solid var(--ink);
+    background: var(--paper);
+
+    box-shadow: 2px 2px 0 var(--ink);
+
+    font-size: 0.65rem;
+    font-weight: 900;
+    letter-spacing: 0.04em;
+
+    transition:
+        transform 0.15s ease,
+        background 0.15s ease;
+}
+
+.tag-option:hover span {
+    transform: translateY(-2px);
+}
+
+.tag-option input:checked + span {
+    background: var(--teal);
+    color: var(--paper);
+
+    transform: translate(-1px, -1px);
+
+    box-shadow: 4px 4px 0 var(--ink);
+}
+
+.avoid-option input:checked + span {
+    background: var(--red);
+    color: var(--paper);
+}
+
+
+/* =====================================================
+   SUBMIT
+===================================================== */
+
+.planner-submit-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 35px;
+
+    padding: 55px 7%;
+
+    background: var(--red);
+    color: var(--paper);
+}
+
+.planner-submit-section .section-number {
+    color: var(--yellow);
+}
+
+.planner-submit-section h2 {
+    margin: 10px 0 0;
+
+    font-size: clamp(2.4rem, 4.5vw, 4.5rem);
+    line-height: 0.86;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+}
+
+.planner-submit-section h2 span {
+    color: var(--yellow);
+}
+
+.planner-submit-button {
+    min-width: 210px;
+
+    background: var(--yellow);
+    color: var(--ink);
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .planner-header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .option-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .transport-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .planner-header {
+        padding: 45px 6%;
+    }
+
+    .planner-header h1 {
+        font-size: clamp(2.8rem, 13vw, 4.5rem);
+    }
+
+    .planner-section {
+        padding: 45px 6%;
+    }
+
+    .planner-section-heading h2 {
+        font-size: clamp(1.9rem, 9vw, 3rem);
+    }
+
+    .date-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .traveller-selector {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .option-grid,
+    .transport-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .planner-submit-section {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 45px 6%;
+    }
+
+    .planner-submit-button {
+        width: 100%;
+    }
+
+}
+
+/* =====================================================
+   MY PLANS DASHBOARD
+===================================================== */
+
+.plans-page {
+    background: var(--cream);
+}
+
+
+/* =====================================================
+   PLANS HEADER
+===================================================== */
+
+.plans-header {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    gap: 40px;
+
+    padding: 65px 7% 55px;
+
+    background: var(--paper);
+
+    border-bottom: var(--border-thick);
+}
+
+
+.plans-header h1 {
+    margin: 14px 0 15px;
+
+    font-size: clamp(3.2rem, 6vw, 6rem);
+
+    line-height: 0.85;
+
+    letter-spacing: -0.06em;
+
+    text-transform: uppercase;
+}
+
+
+.plans-header h1 span {
+    color: var(--red);
+}
+
+
+.plans-header p {
+    max-width: 500px;
+
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 0.95rem;
+
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   PLANS CONTENT
+===================================================== */
+
+.plans-content {
+    padding: 55px 7%;
+}
+
+
+.plans-section-heading {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+.plans-label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: var(--muted);
+
+    font-size: 0.62rem;
+
+    font-weight: 900;
+
+    letter-spacing: 0.12em;
+}
+
+
+.plans-section-heading h2 {
+    margin: 0;
+
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
+
+    line-height: 0.9;
+
+    letter-spacing: -0.04em;
+
+    text-transform: uppercase;
+}
+
+
+.plans-count {
+    padding: 8px 11px;
+
+    border: 2px solid var(--ink);
+
+    background: var(--yellow);
+
+    font-size: 0.62rem;
+
+    font-weight: 900;
+}
+
+
+/* =====================================================
+   PLANS LIST
+===================================================== */
+
+.plans-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+
+/* =====================================================
+   PLAN CARD
+===================================================== */
+
+.plan-card {
+    display: grid;
+
+    grid-template-columns:
+        minmax(250px, 1.4fr)
+        minmax(300px, 1fr)
+        auto;
+
+    border: 3px solid var(--ink);
+
+    background: var(--paper);
+
+    box-shadow: 5px 5px 0 var(--ink);
+
+    transition:
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+
+.plan-card:hover {
+    transform: translate(-2px, -2px);
+
+    box-shadow: 8px 8px 0 var(--ink);
+}
+
+
+/* =====================================================
+   PLAN MAIN
+===================================================== */
+
+.plan-card-main {
+    padding: 22px;
+
+    border-right: 2px solid var(--ink);
+}
+
+
+.plan-card-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    margin-bottom: 15px;
+}
+
+
+.plan-card-region {
+    color: var(--muted);
+
+    font-size: 0.62rem;
+
+    font-weight: 900;
+
+    letter-spacing: 0.08em;
+
+    text-transform: uppercase;
+}
+
+
+.plan-card-status {
+    padding: 5px 8px;
+
+    border: 2px solid var(--ink);
+
+    background: #BADFDB;
+
+    font-size: 0.55rem;
+
+    font-weight: 900;
+}
+
+
+.plan-card-main h3 {
+    margin: 0 0 14px;
+
+    font-size: 2rem;
+
+    line-height: 0.95;
+
+    letter-spacing: -0.035em;
+
+    text-transform: uppercase;
+}
+
+
+.plan-card-dates {
+    display: flex;
+
+    align-items: center;
+
+    gap: 9px;
+
+    color: var(--muted);
+
+    font-size: 0.72rem;
+
+    font-weight: 800;
+}
+
+
+.plan-date-arrow {
+    color: var(--red);
+
+    font-size: 1rem;
+}
+
+
+/* =====================================================
+   PLAN DETAILS
+===================================================== */
+
+.plan-card-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    background: var(--cream);
+    border-left: 2px solid var(--ink);
+}
+
+
+.plan-detail {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 18px;
+    background: var(--cream);
+    border-right: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+}
+
+
+.plan-detail-label {
+    margin-bottom: 5px;
+
+    color: var(--muted);
+
+    font-size: 0.55rem;
+
+    font-weight: 900;
+
+    letter-spacing: 0.08em;
+}
+
+
+.plan-detail strong {
+    font-size: 0.82rem;
+}
+
+
+.plan-card-interests {
+    grid-column: 1 / -1;
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 5px;
+
+    padding: 12px;
+
+    background: var(--paper);
+}
+
+
+.plan-card-interests span {
+    padding: 4px 7px;
+
+    border: 1px solid var(--ink);
+
+    background: #BADFDB;
+
+    font-size: 0.52rem;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+
+/* =====================================================
+   PLAN ACTIONS
+===================================================== */
+
+.plan-card-actions {
+    display: flex;
+
+    flex-direction: column;
+
+    border-left: 2px solid var(--ink);
+}
+
+
+.plan-action-button {
+    flex: 1;
+
+    min-width: 125px;
+
+    padding: 18px;
+
+    border: 0;
+
+    background: var(--yellow);
+
+    color: var(--ink);
+
+    font: inherit;
+
+    font-size: 0.65rem;
+
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+
+.plan-action-button:hover {
+    background: var(--red);
+
+    color: var(--paper);
+}
+
+
+.plan-action-delete {
+    width: 100%;
+
+    padding: 10px;
+
+    border: 0;
+
+    border-top: 2px solid var(--ink);
+
+    background: var(--paper);
+
+    color: var(--ink);
+
+    font-size: 1.1rem;
+
+    font-weight: 900;
+
+    cursor: pointer;
+}
+
+
+.plan-action-delete:hover {
+    background: var(--red);
+
+    color: var(--paper);
+}
+
+
+/* =====================================================
+   EMPTY STATE
+===================================================== */
+
+.empty-plans {
+    min-height: 230px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 30px;
+
+    border: 3px dashed var(--ink);
+
+    background: var(--paper);
+}
+
+
+.empty-plans-mark {
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+
+    display: grid;
+
+    place-items: center;
+
+    border: 3px solid var(--ink);
+
+    background: var(--yellow);
+
+    font-size: 2rem;
+
+    box-shadow: 4px 4px 0 var(--ink);
+}
+
+
+.empty-plans h3 {
+    margin: 5px 0 8px;
+
+    font-size: 1.5rem;
+
+    line-height: 1;
+
+    letter-spacing: -0.03em;
+}
+
+
+.empty-plans p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 0.8rem;
+}
+
+
+.empty-plans .btn {
+    margin-left: auto;
+
+    white-space: nowrap;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .plans-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .plan-card {
+        grid-template-columns: 1fr;
+    }
+
+
+    .plan-card-main {
+        border-right: 0;
+
+        border-bottom: 2px solid var(--ink);
+    }
+
+
+    .plan-card-actions {
+        flex-direction: row;
+
+        border-left: 0;
+
+        border-top: 2px solid var(--ink);
+    }
+
+
+    .plan-action-button {
+        min-height: 55px;
+    }
+
+
+    .plan-action-delete {
+        width: 55px;
+
+        border-top: 0;
+
+        border-left: 2px solid var(--ink);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .plans-header {
+        padding: 50px 6% 42px;
+    }
+
+
+    .plans-header h1 {
+        font-size: clamp(3rem, 14vw, 4.5rem);
+    }
+
+
+    .plans-content {
+        padding: 42px 6%;
+    }
+
+
+    .plans-section-heading {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .plan-card-main {
+        padding: 18px;
+    }
+
+
+    .plan-card-main h3 {
+        font-size: 1.6rem;
+    }
+
+
+    .plan-card-details {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+    .empty-plans {
+        align-items: flex-start;
+
+        flex-direction: column;
+    }
+
+
+    .empty-plans .btn {
+        width: 100%;
+
+        margin-left: 0;
+    }
+
+}
+
+/* =====================================================
+   CONNECTED PLANNER — ENGINE STATUS
+===================================================== */
+
+.planner-engine-status {
+    margin: 0 7% 28px;
+    padding: 16px 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    border: 3px solid var(--ink);
+    background: var(--paper);
+    box-shadow: 4px 4px 0 var(--ink);
+}
+
+.planner-engine-status-mark {
+    width: 34px;
+    height: 34px;
+    flex: 0 0 34px;
+    display: grid;
+    place-items: center;
+    border: 2px solid var(--ink);
+    background: var(--teal);
+    color: #fff;
+    font-weight: 900;
+}
+
+.planner-engine-status strong {
+    display: block;
+    font-size: .72rem;
+    letter-spacing: .08em;
+}
+
+.planner-engine-status p {
+    margin: 4px 0 0;
+    color: var(--muted);
+    font-size: .78rem;
+    line-height: 1.5;
+}
+
+.planner-engine-status[data-state="loading"] {
+    background: #FFF0C8;
+}
+
+.planner-engine-status[data-state="error"] {
+    background: #FFE0E0;
+}
+
+.planner-submit-button:disabled {
+    opacity: .65;
+    cursor: wait;
+}
+
+
+/* =====================================================
+   CONNECTED PLAN RESULTS
+===================================================== */
+
+.plan-card.is-open {
+    background: var(--paper);
+}
+
+.plan-card-status.status-good {
+    background: var(--teal);
+    color: #fff;
+}
+
+.plan-result-panel {
+    grid-column: 1 / -1;
+    border-top: var(--border-thick);
+    background: var(--cream);
+    padding: 24px;
+}
+
+.plan-result-meta,
+.plan-alert {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 13px 15px;
+    border: 2px solid var(--ink);
+    margin-bottom: 14px;
+    font-size: .76rem;
+    line-height: 1.5;
+}
+
+.plan-result-meta strong,
+.plan-alert > strong {
+    flex: 0 0 auto;
+    font-size: .66rem;
+    letter-spacing: .08em;
+}
+
+.plan-result-meta span {
+    color: var(--muted);
+}
+
+.plan-warning {
+    background: #FFE3A9;
+}
+
+.plan-info {
+    background: #D7EFEA;
+}
+
+.plan-alert ul {
+    margin: 0;
+    padding-left: 18px;
+}
+
+.plan-alert.conflict {
+    background: #FFD4D4;
+}
+
+.plan-alert.warning {
+    background: #FFF0C8;
+}
+
+.plan-result-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3px;
+    border: 3px solid var(--ink);
+    background: var(--ink);
+    margin-bottom: 24px;
+}
+
+.plan-result-grid > div {
+    padding: 14px;
+    background: var(--paper);
+}
+
+.plan-result-grid span {
+    display: block;
+    margin-bottom: 5px;
+    font-size: .58rem;
+    font-weight: 900;
+    letter-spacing: .08em;
+    color: var(--muted);
+}
+
+.plan-result-grid strong {
+    font-size: .85rem;
+}
+
+.itinerary-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 16px;
+    margin: 20px 0 12px;
+}
+
+.itinerary-heading h3 {
+    margin: 4px 0 0;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.plan-small-action {
+    border: 2px solid var(--ink);
+    background: var(--yellow);
+    color: var(--ink);
+    padding: 9px 12px;
+    font: inherit;
+    font-size: .62rem;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 var(--ink);
+}
+
+.itinerary-days {
+    display: grid;
+    gap: 14px;
+}
+
+.itinerary-day {
+    border: 3px solid var(--ink);
+    background: var(--paper);
+}
+
+.itinerary-day > header {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 12px 14px;
+    border-bottom: 2px solid var(--ink);
+    background: var(--yellow);
+    font-size: .62rem;
+    font-weight: 900;
+    letter-spacing: .06em;
+}
+
+.itinerary-day > header div {
+    display: flex;
+    gap: 12px;
+    align-items: baseline;
+}
+
+.itinerary-day > header strong {
+    font-size: .82rem;
+    letter-spacing: 0;
+}
+
+.itinerary-items {
+    display: grid;
+}
+
+.itinerary-item {
+    display: grid;
+    grid-template-columns: 90px 1fr auto;
+    gap: 14px;
+    align-items: center;
+    padding: 13px 14px;
+    border-bottom: 1px solid rgba(25,22,20,.18);
+}
+
+.itinerary-item:last-child {
+    border-bottom: 0;
+}
+
+.itinerary-time strong,
+.itinerary-time span {
+    display: block;
+}
+
+.itinerary-time strong {
+    font-size: .8rem;
+}
+
+.itinerary-time span {
+    color: var(--muted);
+    font-size: .66rem;
+    margin-top: 3px;
+}
+
+.itinerary-item-main {
+    min-width: 0;
+}
+
+.itinerary-type {
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: .55rem;
+    font-weight: 900;
+    letter-spacing: .08em;
+    color: var(--red);
+}
+
+.itinerary-item-main strong,
+.itinerary-item-main small {
+    display: block;
+}
+
+.itinerary-item-main strong {
+    overflow-wrap: anywhere;
+    font-size: .82rem;
+}
+
+.itinerary-item-main small {
+    margin-top: 4px;
+    color: var(--muted);
+    font-size: .65rem;
+}
+
+.plan-item-remove {
+    border: 2px solid var(--ink);
+    background: var(--paper);
+    padding: 7px 9px;
+    font: inherit;
+    font-size: .55rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.plan-item-remove:hover {
+    background: #FFA4A4;
+}
+
+.recommendations-details {
+    margin-top: 18px;
+    border: 2px solid var(--ink);
+    background: var(--paper);
+}
+
+.recommendations-details summary {
+    padding: 12px 14px;
+    cursor: pointer;
+    font-size: .65rem;
+    font-weight: 900;
+    letter-spacing: .08em;
+}
+
+.recommendation-list {
+    border-top: 2px solid var(--ink);
+}
+
+.recommendation-row {
+    display: grid;
+    grid-template-columns: minmax(130px, 1fr) 80px 2fr;
+    gap: 12px;
+    padding: 10px 14px;
+    border-bottom: 1px solid rgba(25,22,20,.18);
+    font-size: .68rem;
+}
+
+.recommendation-row small {
+    color: var(--muted);
+}
+
+.plan-empty-result {
+    padding: 18px;
+    color: var(--muted);
+    font-size: .75rem;
+}
+
+.mova-plan-toast {
+    position: fixed;
+    z-index: 1000;
+    right: 22px;
+    bottom: 22px;
+    max-width: min(420px, calc(100vw - 44px));
+    padding: 14px 16px;
+    border: 3px solid var(--ink);
+    background: var(--yellow);
+    color: var(--ink);
+    box-shadow: 5px 5px 0 var(--ink);
+    font-size: .76rem;
+    font-weight: 800;
+    opacity: 0;
+    transform: translateY(12px);
+    pointer-events: none;
+    transition: opacity .18s ease, transform .18s ease;
+}
+
+.mova-plan-toast.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 850px) {
+    .plan-result-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .recommendation-row {
+        grid-template-columns: 1fr 60px;
+    }
+
+    .recommendation-row small {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 600px) {
+    .planner-engine-status {
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+
+    .plan-result-panel {
+        padding: 16px;
+    }
+
+    .plan-result-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .itinerary-item {
+        grid-template-columns: 65px 1fr;
+    }
+
+    .plan-item-remove {
+        grid-column: 2;
+        justify-self: start;
+    }
+
+    .itinerary-day > header {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .itinerary-heading {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+
+/* Planner engine connection status */
+.planner-engine-status {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+.planner-engine-retry {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+.planner-engine-status[data-state="error"] {
+    border-color: var(--red);
+}
+.planner-engine-status[data-state="loading"] {
+    opacity: .85;
+}
+@media (max-width: 700px) {
+    .planner-engine-retry {
+        width: 100%;
+    }
+}
+
+
+/* =====================================================
+   ENGINE / ITINERARY INTERACTION POLISH
+===================================================== */
+
+.destination-selected-warning {
+    background: #FFA4A4;
+}
+
+.destination-selected > div {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.destination-engine-badge,
+.recommendation-scheduled {
+    padding: 5px 7px;
+    border: 2px solid var(--ink);
+    background: var(--paper);
+    color: var(--ink);
+    font-size: 0.55rem;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    white-space: nowrap;
+}
+
+.destination-selected-warning .destination-engine-badge {
+    background: var(--red);
+    color: var(--paper);
+}
+
+.recommendation-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto auto;
+    align-items: center;
+    gap: 12px;
+}
+
+.recommendation-main {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.recommendation-main strong {
+    overflow-wrap: anywhere;
+}
+
+.recommendation-main small {
+    color: var(--muted);
+    line-height: 1.45;
+}
+
+.recommendation-add {
+    min-width: 55px;
+}
+
+.itinerary-place-id {
+    color: var(--muted);
+    font-size: 0.58rem;
+    overflow-wrap: anywhere;
+}
+
+.itinerary-item-actions {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.itinerary-item-actions .plan-small-action,
+.itinerary-item-actions .plan-item-remove {
+    white-space: nowrap;
+}
+
+@media (max-width: 700px) {
+    .recommendation-row {
+        grid-template-columns: 1fr auto;
+    }
+
+    .recommendation-row > .recommendation-add,
+    .recommendation-row > .recommendation-scheduled {
+        grid-column: 2;
+        grid-row: 1 / span 2;
+    }
+
+    .itinerary-item-actions {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+}
+
+/* =====================================================
+   MOVA CREATE PLAN — MULTI-STOP / LOCATION / CREW
+===================================================== */
+.multi-destination-box,.must-visit-box{margin-top:20px;border:3px solid var(--ink);background:var(--paper);padding:18px;box-shadow:4px 4px 0 var(--ink)}
+.multi-destination-head{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.multi-destination-head strong{display:block;margin-top:4px;font-size:.9rem}
+.selected-destinations,.must-visit-list,.invite-list{display:grid;gap:8px;margin-top:14px}
+.selected-destination-chip,.must-visit-chip,.invite-chip{display:flex;align-items:center;justify-content:space-between;gap:10px;border:2px solid var(--ink);background:var(--cream);padding:9px 11px;font-size:.72rem;font-weight:800}
+.selected-destination-chip span{display:flex;align-items:center;gap:8px}.selected-destination-chip b{display:grid;place-items:center;width:22px;height:22px;border:2px solid var(--ink);background:var(--yellow)}
+.selected-destination-chip small{font-weight:600;color:var(--muted)}
+.selected-destination-chip button,.must-visit-chip button,.invite-chip button{border:2px solid var(--ink);background:var(--paper);font:inherit;font-weight:900;cursor:pointer;width:28px;height:28px}
+.origin-card{display:flex;justify-content:space-between;align-items:center;gap:18px;border:3px solid var(--ink);padding:18px;background:var(--teal);color:#fff;box-shadow:5px 5px 0 var(--ink)}
+.origin-card strong{font-size:.8rem}.origin-card p{margin:5px 0 0;font-size:.72rem;line-height:1.5;opacity:.9}.origin-card .plan-small-action{background:var(--yellow);color:var(--ink)}
+.origin-manual{margin-top:16px}.invite-row{display:grid;grid-template-columns:1fr auto;gap:10px}
+@media(max-width:650px){.multi-destination-head,.origin-card{align-items:flex-start;flex-direction:column}.invite-row{grid-template-columns:1fr}.origin-card .plan-small-action{width:100%}}
+
+
+/* Food and self-drive cost inputs */
+.travel-cost-fields { margin-top: 22px; display: grid; gap: 18px; }
+.cost-input-group { display: grid; gap: 8px; }
+.cost-input-wrap { position: relative; display: flex; align-items: center; }
+.cost-input-wrap > span { position: absolute; left: 14px; font-weight: 900; z-index: 1; }
+.cost-input-wrap input { padding-left: 34px; width: 100%; }
+.self-drive-fields { border: var(--border); border-radius: var(--radius-medium); padding: 18px; background: var(--paper); box-shadow: var(--shadow-small); }
+.self-drive-heading { font-weight: 950; letter-spacing: .08em; margin-bottom: 14px; }
+.self-drive-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+@media (max-width: 760px) { .self-drive-grid { grid-template-columns: 1fr; } }
+
+
+/* Create Plan interaction pass */
+.planner-progress{margin:0 7% 10px;display:flex;align-items:center;gap:12px;justify-content:flex-end;font-size:.58rem;font-weight:900;letter-spacing:.08em}.planner-progress-track{width:min(280px,32vw);height:8px;border:2px solid var(--ink);background:var(--paper);overflow:hidden}.planner-progress-track span{display:block;height:100%;width:0;background:var(--teal);transition:width .2s ease}.planner-dialog{width:min(500px,calc(100vw - 28px));margin:auto;border:var(--border-thick);padding:0;background:var(--paper);color:var(--ink);box-shadow:10px 10px 0 var(--ink)}.planner-dialog::backdrop{background:rgba(0,0,0,.62);backdrop-filter:blur(3px)}.planner-dialog form{display:grid;gap:12px;padding:24px}.planner-dialog h2{margin:0;font-size:2rem;line-height:.9}.planner-dialog-actions{display:flex;justify-content:flex-end;gap:9px;margin-top:5px}.planner-dialog .planner-input{width:100%;min-height:48px}.workspace-toast{position:fixed;top:24px;right:24px;z-index:2000;max-width:min(420px,calc(100vw - 32px));padding:13px 16px;border:3px solid var(--ink);background:var(--paper);box-shadow:6px 6px 0 var(--ink);font-size:.7rem;font-weight:800;line-height:1.45}.workspace-toast[data-state="error"]{background:#f7d6d8}.workspace-navbar-hidden{display:none!important}@media(max-width:650px){.planner-progress{margin:0 6% 8px;justify-content:flex-start}.planner-progress-track{width:180px}.planner-dialog-actions{flex-direction:column}.planner-dialog-actions .btn{width:100%}}

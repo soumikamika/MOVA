@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MOVA — review and edit your generated trip.">
+  <title>Edit Plan — MOVA</title>
+  <link rel="stylesheet" href="../css/global.css"><link rel="stylesheet" href="../css/plans.css"><link rel="stylesheet" href="../css/edit-plan.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+</head>
+<body>
+<div class="site-background"><div class="site-shell">
+<header id="navbar"></header>
+<main class="edit-plan-page">
+  <div id="edit-plan-toast" class="workspace-toast" role="status" aria-live="polite" hidden></div>
+  <section class="edit-plan-header">
+    <div><span class="section-number">MY PLANS / REVIEW</span><h1>YOUR PLAN. <span>YOUR CALL.</span></h1><p>MOVA built a first itinerary from your trip details. Review it, change it yourself, or tell the plan assistant what you want changed.</p></div>
+    <div class="edit-plan-header-actions"><button id="confirm-plan" class="btn btn-primary">CONFIRM PLAN <span class="button-arrow">→</span></button><a href="plans.html" class="btn btn-secondary">BACK TO MY PLANS</a></div>
+  </section>
+
+  <section id="plan-summary" class="edit-summary"></section>
+
+  <section class="edit-workspace">
+    <aside class="edit-sidebar">
+      <div class="edit-sidebar-block"><span class="plans-label">TRIP DETAILS</span><div id="trip-details"></div></div>
+      <div class="edit-sidebar-block"><span class="plans-label">TRAVEL METHOD</span><div id="travel-method"></div></div><div class="edit-sidebar-block"><span class="plans-label">BUDGET BREAKDOWN</span><div id="budget-breakdown"></div></div>
+      <div class="edit-sidebar-block"><span class="plans-label">GROUP</span><div id="group-details"></div></div>
+      <div class="edit-sidebar-block"><span class="plans-label">PLACES IN MIND</span><div id="must-visit-details"></div></div>
+    </aside>
+    <section class="edit-main">
+      <div class="map-panel"><div class="panel-heading"><div><span class="plans-label">ROUTE MAP</span><h2>YOUR JOURNEY</h2></div><span id="map-status" class="map-status">LOADING MAP</span></div><div id="plan-map"></div><div class="map-legend"><span>● START</span><span>● STOPS</span><span>— ROUTE</span></div></div>
+      <div class="itinerary-editor"><div class="panel-heading"><div><span class="plans-label">DAY BY DAY</span><h2>EDIT ITINERARY</h2></div><button id="reoptimize-plan" class="plan-small-action">RE-OPTIMIZE ↻</button></div><div id="edit-itinerary"></div></div>
+    </section>
+  </section>
+
+  <button id="floating-assistant-toggle" class="floating-assistant-toggle" type="button" aria-label="Open plan assistant" title="Plan assistant">
+    <span class="assistant-icon" aria-hidden="true">✦</span>
+  </button>
+
+  <dialog id="move-place-dialog" class="move-place-dialog" aria-labelledby="move-place-title">
+    <form id="move-place-form">
+      <span class="plans-label">EDIT ITINERARY</span>
+      <h2 id="move-place-title">MOVE THIS PLACE.</h2>
+      <p id="move-place-name" class="muted"></p>
+      <input type="hidden" id="move-place-id">
+      <label>DAY
+        <select id="move-place-day" class="planner-input" required></select>
+      </label>
+      <label>START TIME
+        <input id="move-place-start" class="planner-input" type="time" value="10:00" required>
+      </label>
+      <div class="dialog-actions">
+        <button type="button" class="btn btn-secondary" id="cancel-move-place">CANCEL</button>
+        <button type="submit" class="btn btn-primary">MOVE PLACE →</button>
+      </div>
+    </form>
+  </dialog>
+  
+  <section id="plan-assistant-panel" class="plan-assistant-panel floating-panel" hidden>
+    <div class="assistant-header">
+      <span class="plans-label">MOVA PLAN ASSISTANT</span>
+      <button id="close-assistant" class="close-assistant">×</button>
+    </div>
+    <div class="assistant-copy">
+      <h2>JUST TELL IT WHAT TO CHANGE.</h2>
+      <p>Try: “Remove Baga Beach”, “Move Baga Beach to day 2 at 10:00”, or “Add Baga Beach”.</p>
+    </div>
+    <div id="assistant-messages" class="assistant-messages"><div class="assistant-message assistant">Hi! I can help edit this plan. Tell me one change at a time.</div></div>
+    <form id="assistant-form" class="assistant-form"><input id="assistant-input" class="planner-input" placeholder="Ask to change your itinerary..." autocomplete="off"><button class="btn btn-primary" type="submit">SEND →</button></form>
+  </section>
+</main>
+<footer id="footer"></footer>
+</div></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="../js/firebase-config.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/global.js"></script><script src="../js/api.js"></script><script src="../js/edit-plan.js"></script>
+</body></html>

@@ -1,0 +1,66 @@
+# Environment variables (keep example templates)
+.env
+.env.*
+!.env.example
+!.env.firebase.example
+
+# Python environments & caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Firebase Admin SDK service-account JSONs & private keys
+*firebase-adminsdk*.json
+*service-account*.json
+*serviceAccount*.json
+*adminsdk*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+
+# Databases
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Logs, temporary files, local uploads & private user data
+*.log
+logs/
+*.tmp
+*.temp
+*.bak
+*.swp
+uploads/
+local_uploads/
+private/
+user_data/
+
+# IDEs, OS files & local deployment folders
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+.render/
+.vercel/
+.netlify/
+
+# Node & build outputs
+node_modules/
+dist/
+build/
+out/
+.cache/

@@ -1,0 +1,1702 @@
+{
+  "meta": {
+    "dataset": "goa_dev",
+    "schema_version": 1,
+    "data_source": "synthetic_dev",
+    "generated_at": "2026-10-02T15:19:15.676824Z",
+    "generated_by": "app.data.dev_data",
+    "seed": 42,
+    "disclaimer": "SYNTHETIC DEVELOPMENT DATA - NOT REAL TRAVEL INFORMATION. Landmark names/locations are approximate; all other attributes are generated for testing only."
+  },
+  "records": [
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_baga_beach",
+      "destination_id": "goa",
+      "name": "Baga Beach",
+      "category": "beach",
+      "tags": [
+        "beaches",
+        "water_sports",
+        "nightlife",
+        "crowds"
+      ],
+      "location": {
+        "latitude": 15.5553,
+        "longitude": 73.7517
+      },
+      "rating": 3.8,
+      "rating_count": 4122,
+      "popularity": 0.91,
+      "crowd_level": 0.86,
+      "avg_visit_minutes": 150,
+      "entry_fee_inr": 0.0,
+      "intensity": 2,
+      "opening_hours": {
+        "always_open": true,
+        "weekly": {}
+      },
+      "closed_months": [],
+      "best_months": [
+        1,
+        2,
+        3,
+        11,
+        12
+      ],
+      "best_times_of_day": [
+        "morning",
+        "evening"
+      ],
+      "family_friendly": true,
+      "wheelchair_accessible": false,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_calangute_beach",
+      "destination_id": "goa",
+      "name": "Calangute Beach",
+      "category": "beach",
+      "tags": [
+        "beaches",
+        "crowds",
+        "food"
+      ],
+      "location": {
+        "latitude": 15.544,
+        "longitude": 73.755
+      },
+      "rating": 3.9,
+      "rating_count": 11925,
+      "popularity": 0.91,
+      "crowd_level": 0.89,
+      "avg_visit_minutes": 120,
+      "entry_fee_inr": 0.0,
+      "intensity": 1,
+      "opening_hours": {
+        "always_open": true,
+        "weekly": {}
+      },
+      "closed_months": [],
+      "best_months": [
+        1,
+        2,
+        3,
+        11,
+        12
+      ],
+      "best_times_of_day": [],
+      "family_friendly": true,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_anjuna_beach",
+      "destination_id": "goa",
+      "name": "Anjuna Beach",
+      "category": "beach",
+      "tags": [
+        "beaches",
+        "photography",
+        "relaxation"
+      ],
+      "location": {
+        "latitude": 15.5736,
+        "longitude": 73.7413
+      },
+      "rating": 3.8,
+      "rating_count": 9545,
+      "popularity": 0.79,
+      "crowd_level": 0.57,
+      "avg_visit_minutes": 105,
+      "entry_fee_inr": 0.0,
+      "intensity": 1,
+      "opening_hours": {
+        "always_open": true,
+        "weekly": {}
+      },
+      "closed_months": [],
+      "best_months": [
+        1,
+        2,
+        3,
+        11,
+        12
+      ],
+      "best_times_of_day": [],
+      "family_friendly": true,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_vagator_beach",
+      "destination_id": "goa",
+      "name": "Vagator Beach",
+      "category": "beach",
+      "tags": [
+        "beaches",
+        "scenic_views",
+        "photography"
+      ],
+      "location": {
+        "latitude": 15.6006,
+        "longitude": 73.7353
+      },
+      "rating": 4.3,
+      "rating_count": 6497,
+      "popularity": 0.69,
+      "crowd_level": 0.54,
+      "avg_visit_minutes": 120,
+      "entry_fee_inr": 0.0,
+      "intensity": 2,
+      "opening_hours": {
+        "always_open": true,
+        "weekly": {}
+      },
+      "closed_months": [],
+      "best_months": [
+        1,
+        2,
+        3,
+        11,
+        12
+      ],
+      "best_times_of_day": [],
+      "family_friendly": null,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_candolim_beach",
+      "destination_id": "goa",
+      "name": "Candolim Beach",
+      "category": "beach",
+      "tags": [
+        "beaches",
+        "relaxation"
+      ],
+      "location": {
+        "latitude": 15.518,
+        "longitude": 73.7623
+      },
+      "rating": 4.0,
+      "rating_count": 4696,
+      "popularity": 0.63,
+      "crowd_level": 0.48,
+      "avg_visit_minutes": 120,
+      "entry_fee_inr": 0.0,
+      "intensity": 1,
+      "opening_hours": {
+        "always_open": true,
+        "weekly": {}
+      },
+      "closed_months": [],
+      "best_months": [
+        1,
+        2,
+        3,
+        11,
+        12
+      ],
+      "best_times_of_day": [],
+      "family_friendly": true,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_fort_aguada",
+      "destination_id": "goa",
+      "name": "Fort Aguada",
+      "category": "historical",
+      "tags": [
+        "history",
+        "scenic_views",
+        "photography"
+      ],
+      "location": {
+        "latitude": 15.4925,
+        "longitude": 73.7734
+      },
+      "rating": 4.0,
+      "rating_count": 4889,
+      "popularity": 0.77,
+      "crowd_level": 0.55,
+      "avg_visit_minutes": 90,
+      "entry_fee_inr": 40.0,
+      "intensity": 2,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "08:30",
+              "close": "17:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "08:30",
+              "close": "17:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "08:30",
+              "close": "17:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "08:30",
+              "close": "17:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "08:30",
+              "close": "17:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "08:30",
+              "close": "17:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "08:30",
+              "close": "17:30"
+            }
+          ]
+        }
+      },
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": true,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_chapora_fort",
+      "destination_id": "goa",
+      "name": "Chapora Fort",
+      "category": "historical",
+      "tags": [
+        "history",
+        "scenic_views",
+        "hiking"
+      ],
+      "location": {
+        "latitude": 15.6058,
+        "longitude": 73.7362
+      },
+      "rating": 3.9,
+      "rating_count": 12107,
+      "popularity": 0.61,
+      "crowd_level": 0.38,
+      "avg_visit_minutes": 60,
+      "entry_fee_inr": 0.0,
+      "intensity": 3,
+      "opening_hours": null,
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": null,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_mapusa_market",
+      "destination_id": "goa",
+      "name": "Mapusa Market",
+      "category": "market",
+      "tags": [
+        "markets",
+        "shopping",
+        "local_experiences",
+        "food"
+      ],
+      "location": {
+        "latitude": 15.5915,
+        "longitude": 73.809
+      },
+      "rating": 4.3,
+      "rating_count": 9916,
+      "popularity": 0.58,
+      "crowd_level": 0.73,
+      "avg_visit_minutes": 90,
+      "entry_fee_inr": 0.0,
+      "intensity": 1,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "09:00",
+              "close": "19:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "09:00",
+              "close": "19:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "09:00",
+              "close": "19:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "09:00",
+              "close": "19:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "09:00",
+              "close": "19:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "09:00",
+              "close": "19:30"
+            }
+          ]
+        }
+      },
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": null,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_anjuna_flea_market",
+      "destination_id": "goa",
+      "name": "Anjuna Flea Market",
+      "category": "market",
+      "tags": [
+        "markets",
+        "shopping",
+        "local_experiences",
+        "crowds"
+      ],
+      "location": {
+        "latitude": 15.574,
+        "longitude": 73.74
+      },
+      "rating": 3.9,
+      "rating_count": 9173,
+      "popularity": 0.7,
+      "crowd_level": 0.83,
+      "avg_visit_minutes": 135,
+      "entry_fee_inr": 0.0,
+      "intensity": 1,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "2": [
+            {
+              "open": "08:30",
+              "close": "18:00"
+            }
+          ]
+        }
+      },
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": null,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_reis_magos_fort",
+      "destination_id": "goa",
+      "name": "Reis Magos Fort",
+      "category": "historical",
+      "tags": [
+        "history",
+        "photography"
+      ],
+      "location": {
+        "latitude": 15.501,
+        "longitude": 73.816
+      },
+      "rating": 3.9,
+      "rating_count": 4960,
+      "popularity": 0.44,
+      "crowd_level": 0.27,
+      "avg_visit_minutes": 60,
+      "entry_fee_inr": 40.0,
+      "intensity": 2,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "09:30",
+              "close": "17:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "09:30",
+              "close": "17:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "09:30",
+              "close": "17:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "09:30",
+              "close": "17:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "09:30",
+              "close": "17:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "09:30",
+              "close": "17:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "09:30",
+              "close": "17:30"
+            }
+          ]
+        }
+      },
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": null,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_baga_nightlife_strip",
+      "destination_id": "goa",
+      "name": "Baga Nightlife Strip",
+      "category": "nightlife",
+      "tags": [
+        "nightlife",
+        "clubs",
+        "crowds"
+      ],
+      "location": {
+        "latitude": 15.557,
+        "longitude": 73.753
+      },
+      "rating": 4.7,
+      "rating_count": 6658,
+      "popularity": 0.83,
+      "crowd_level": 1.0,
+      "avg_visit_minutes": 165,
+      "entry_fee_inr": 710.0,
+      "intensity": 2,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "20:00",
+              "close": "23:59"
+            }
+          ],
+          "1": [
+            {
+              "open": "20:00",
+              "close": "23:59"
+            }
+          ],
+          "2": [
+            {
+              "open": "20:00",
+              "close": "23:59"
+            }
+          ],
+          "3": [
+            {
+              "open": "20:00",
+              "close": "23:59"
+            }
+          ],
+          "4": [
+            {
+              "open": "20:00",
+              "close": "23:59"
+            }
+          ],
+          "5": [
+            {
+              "open": "20:00",
+              "close": "23:59"
+            }
+          ],
+          "6": [
+            {
+              "open": "20:00",
+              "close": "23:59"
+            }
+          ]
+        }
+      },
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": null,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_calangute_water_sports",
+      "destination_id": "goa",
+      "name": "Calangute Water Sports Zone",
+      "category": "adventure",
+      "tags": [
+        "water_sports",
+        "adventure",
+        "beaches"
+      ],
+      "location": {
+        "latitude": 15.546,
+        "longitude": 73.7545
+      },
+      "rating": 4.3,
+      "rating_count": 2810,
+      "popularity": 0.67,
+      "crowd_level": 0.68,
+      "avg_visit_minutes": 135,
+      "entry_fee_inr": 1980.0,
+      "intensity": 4,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "09:00",
+              "close": "17:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "09:00",
+              "close": "17:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "09:00",
+              "close": "17:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "09:00",
+              "close": "17:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "09:00",
+              "close": "17:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "09:00",
+              "close": "17:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "09:00",
+              "close": "17:30"
+            }
+          ]
+        }
+      },
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": null,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_fontainhas",
+      "destination_id": "goa",
+      "name": "Fontainhas Latin Quarter",
+      "category": "cultural",
+      "tags": [
+        "culture",
+        "history",
+        "photography",
+        "architecture",
+        "local_experiences"
+      ],
+      "location": {
+        "latitude": 15.4966,
+        "longitude": 73.83
+      },
+      "rating": 4.6,
+      "rating_count": 11303,
+      "popularity": 0.56,
+      "crowd_level": 0.44,
+      "avg_visit_minutes": 90,
+      "entry_fee_inr": 0.0,
+      "intensity": 1,
+      "opening_hours": {
+        "always_open": true,
+        "weekly": {}
+      },
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": true,
+      "wheelchair_accessible": true,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_bom_jesus",
+      "destination_id": "goa",
+      "name": "Basilica of Bom Jesus",
+      "category": "religious",
+      "tags": [
+        "religious",
+        "history",
+        "architecture"
+      ],
+      "location": {
+        "latitude": 15.5009,
+        "longitude": 73.9116
+      },
+      "rating": 3.7,
+      "rating_count": 12478,
+      "popularity": 0.83,
+      "crowd_level": 0.72,
+      "avg_visit_minutes": 60,
+      "entry_fee_inr": 0.0,
+      "intensity": 1,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "09:00",
+              "close": "18:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "09:00",
+              "close": "18:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "09:00",
+              "close": "18:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "09:00",
+              "close": "18:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "09:00",
+              "close": "18:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "09:00",
+              "close": "18:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "09:00",
+              "close": "18:30"
+            }
+          ]
+        }
+      },
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": true,
+      "wheelchair_accessible": true,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_se_cathedral",
+      "destination_id": "goa",
+      "name": "Se Cathedral",
+      "category": "religious",
+      "tags": [
+        "religious",
+        "history",
+        "architecture"
+      ],
+      "location": {
+        "latitude": 15.503,
+        "longitude": 73.9115
+      },
+      "rating": 3.9,
+      "rating_count": 13023,
+      "popularity": 0.72,
+      "crowd_level": 0.48,
+      "avg_visit_minutes": 45,
+      "entry_fee_inr": 0.0,
+      "intensity": 1,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "07:30",
+              "close": "18:00"
+            }
+          ],
+          "1": [
+            {
+              "open": "07:30",
+              "close": "18:00"
+            }
+          ],
+          "2": [
+            {
+              "open": "07:30",
+              "close": "18:00"
+            }
+          ],
+          "3": [
+            {
+              "open": "07:30",
+              "close": "18:00"
+            }
+          ],
+          "4": [
+            {
+              "open": "07:30",
+              "close": "18:00"
+            }
+          ],
+          "5": [
+            {
+              "open": "07:30",
+              "close": "18:00"
+            }
+          ],
+          "6": [
+            {
+              "open": "07:30",
+              "close": "18:00"
+            }
+          ]
+        }
+      },
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": true,
+      "wheelchair_accessible": true,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_dona_paula_viewpoint",
+      "destination_id": "goa",
+      "name": "Dona Paula Viewpoint",
+      "category": "viewpoint",
+      "tags": [
+        "scenic_views",
+        "photography",
+        "relaxation"
+      ],
+      "location": {
+        "latitude": 15.453,
+        "longitude": 73.804
+      },
+      "rating": 3.7,
+      "rating_count": 1811,
+      "popularity": 0.64,
+      "crowd_level": 0.64,
+      "avg_visit_minutes": 60,
+      "entry_fee_inr": 0.0,
+      "intensity": 1,
+      "opening_hours": {
+        "always_open": true,
+        "weekly": {}
+      },
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": true,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_miramar_beach",
+      "destination_id": "goa",
+      "name": "Miramar Beach",
+      "category": "beach",
+      "tags": [
+        "beaches",
+        "relaxation"
+      ],
+      "location": {
+        "latitude": 15.483,
+        "longitude": 73.809
+      },
+      "rating": 3.9,
+      "rating_count": 2113,
+      "popularity": 0.54,
+      "crowd_level": 0.54,
+      "avg_visit_minutes": 90,
+      "entry_fee_inr": 0.0,
+      "intensity": 1,
+      "opening_hours": {
+        "always_open": true,
+        "weekly": {}
+      },
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": true,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_mangueshi_temple",
+      "destination_id": "goa",
+      "name": "Mangueshi Temple",
+      "category": "religious",
+      "tags": [
+        "religious",
+        "architecture",
+        "culture"
+      ],
+      "location": {
+        "latitude": 15.452,
+        "longitude": 73.977
+      },
+      "rating": 3.8,
+      "rating_count": 3549,
+      "popularity": 0.56,
+      "crowd_level": 0.48,
+      "avg_visit_minutes": 60,
+      "entry_fee_inr": 0.0,
+      "intensity": 1,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "06:00",
+              "close": "12:30"
+            },
+            {
+              "open": "16:00",
+              "close": "20:00"
+            }
+          ],
+          "1": [
+            {
+              "open": "06:00",
+              "close": "12:30"
+            },
+            {
+              "open": "16:00",
+              "close": "20:00"
+            }
+          ],
+          "2": [
+            {
+              "open": "06:00",
+              "close": "12:30"
+            },
+            {
+              "open": "16:00",
+              "close": "20:00"
+            }
+          ],
+          "3": [
+            {
+              "open": "06:00",
+              "close": "12:30"
+            },
+            {
+              "open": "16:00",
+              "close": "20:00"
+            }
+          ],
+          "4": [
+            {
+              "open": "06:00",
+              "close": "12:30"
+            },
+            {
+              "open": "16:00",
+              "close": "20:00"
+            }
+          ],
+          "5": [
+            {
+              "open": "06:00",
+              "close": "12:30"
+            },
+            {
+              "open": "16:00",
+              "close": "20:00"
+            }
+          ],
+          "6": [
+            {
+              "open": "06:00",
+              "close": "12:30"
+            },
+            {
+              "open": "16:00",
+              "close": "20:00"
+            }
+          ]
+        }
+      },
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": true,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_ponda_spice_visit",
+      "destination_id": "goa",
+      "name": "Ponda Spice Plantation Visit",
+      "category": "nature",
+      "tags": [
+        "nature",
+        "food",
+        "local_experiences"
+      ],
+      "location": {
+        "latitude": 15.4,
+        "longitude": 74.01
+      },
+      "rating": 4.5,
+      "rating_count": 5301,
+      "popularity": 0.6,
+      "crowd_level": 0.36,
+      "avg_visit_minutes": 150,
+      "entry_fee_inr": 530.0,
+      "intensity": 2,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "09:00",
+              "close": "16:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "09:00",
+              "close": "16:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "09:00",
+              "close": "16:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "09:00",
+              "close": "16:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "09:00",
+              "close": "16:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "09:00",
+              "close": "16:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "09:00",
+              "close": "16:30"
+            }
+          ]
+        }
+      },
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": true,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_dudhsagar_falls",
+      "destination_id": "goa",
+      "name": "Dudhsagar Falls",
+      "category": "waterfall",
+      "tags": [
+        "waterfalls",
+        "nature",
+        "adventure",
+        "hiking"
+      ],
+      "location": {
+        "latitude": 15.3144,
+        "longitude": 74.3143
+      },
+      "rating": 4.3,
+      "rating_count": 15861,
+      "popularity": 0.87,
+      "crowd_level": 0.76,
+      "avg_visit_minutes": 270,
+      "entry_fee_inr": 1160.0,
+      "intensity": 4,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "08:00",
+              "close": "17:00"
+            }
+          ],
+          "1": [
+            {
+              "open": "08:00",
+              "close": "17:00"
+            }
+          ],
+          "2": [
+            {
+              "open": "08:00",
+              "close": "17:00"
+            }
+          ],
+          "3": [
+            {
+              "open": "08:00",
+              "close": "17:00"
+            }
+          ],
+          "4": [
+            {
+              "open": "08:00",
+              "close": "17:00"
+            }
+          ],
+          "5": [
+            {
+              "open": "08:00",
+              "close": "17:00"
+            }
+          ],
+          "6": [
+            {
+              "open": "08:00",
+              "close": "17:00"
+            }
+          ]
+        }
+      },
+      "closed_months": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "best_months": [
+        1,
+        2,
+        10,
+        11,
+        12
+      ],
+      "best_times_of_day": [
+        "morning"
+      ],
+      "family_friendly": null,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_mollem_sanctuary",
+      "destination_id": "goa",
+      "name": "Mollem Wildlife Sanctuary",
+      "category": "wildlife",
+      "tags": [
+        "wildlife",
+        "nature",
+        "hiking"
+      ],
+      "location": {
+        "latitude": 15.39,
+        "longitude": 74.25
+      },
+      "rating": 3.7,
+      "rating_count": 1110,
+      "popularity": 0.54,
+      "crowd_level": 0.29,
+      "avg_visit_minutes": 195,
+      "entry_fee_inr": 50.0,
+      "intensity": 3,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "07:00",
+              "close": "17:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "07:00",
+              "close": "17:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "07:00",
+              "close": "17:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "07:00",
+              "close": "17:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "07:00",
+              "close": "17:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "07:00",
+              "close": "17:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "07:00",
+              "close": "17:30"
+            }
+          ]
+        }
+      },
+      "closed_months": [
+        7,
+        8
+      ],
+      "best_months": [
+        1,
+        2,
+        11,
+        12
+      ],
+      "best_times_of_day": [],
+      "family_friendly": null,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_colva_beach",
+      "destination_id": "goa",
+      "name": "Colva Beach",
+      "category": "beach",
+      "tags": [
+        "beaches",
+        "crowds",
+        "food"
+      ],
+      "location": {
+        "latitude": 15.279,
+        "longitude": 73.922
+      },
+      "rating": 3.7,
+      "rating_count": 4479,
+      "popularity": 0.79,
+      "crowd_level": 0.67,
+      "avg_visit_minutes": 120,
+      "entry_fee_inr": 0.0,
+      "intensity": 1,
+      "opening_hours": {
+        "always_open": true,
+        "weekly": {}
+      },
+      "closed_months": [],
+      "best_months": [
+        1,
+        2,
+        3,
+        11,
+        12
+      ],
+      "best_times_of_day": [],
+      "family_friendly": true,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_palolem_beach",
+      "destination_id": "goa",
+      "name": "Palolem Beach",
+      "category": "beach",
+      "tags": [
+        "beaches",
+        "relaxation",
+        "water_sports",
+        "photography"
+      ],
+      "location": {
+        "latitude": 15.01,
+        "longitude": 74.0232
+      },
+      "rating": 4.6,
+      "rating_count": 4812,
+      "popularity": 0.84,
+      "crowd_level": 0.6,
+      "avg_visit_minutes": 180,
+      "entry_fee_inr": 0.0,
+      "intensity": 2,
+      "opening_hours": {
+        "always_open": true,
+        "weekly": {}
+      },
+      "closed_months": [],
+      "best_months": [
+        1,
+        2,
+        3,
+        11,
+        12
+      ],
+      "best_times_of_day": [],
+      "family_friendly": true,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_agonda_beach",
+      "destination_id": "goa",
+      "name": "Agonda Beach",
+      "category": "beach",
+      "tags": [
+        "beaches",
+        "relaxation",
+        "nature"
+      ],
+      "location": {
+        "latitude": 15.045,
+        "longitude": 73.9865
+      },
+      "rating": null,
+      "rating_count": null,
+      "popularity": 0.55,
+      "crowd_level": 0.27,
+      "avg_visit_minutes": 135,
+      "entry_fee_inr": 0.0,
+      "intensity": 1,
+      "opening_hours": {
+        "always_open": true,
+        "weekly": {}
+      },
+      "closed_months": [],
+      "best_months": [
+        1,
+        2,
+        3,
+        11,
+        12
+      ],
+      "best_times_of_day": [],
+      "family_friendly": null,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_butterfly_beach",
+      "destination_id": "goa",
+      "name": "Butterfly Beach",
+      "category": "beach",
+      "tags": [
+        "beaches",
+        "nature",
+        "hiking"
+      ],
+      "location": {
+        "latitude": 15.0246,
+        "longitude": 74.0084
+      },
+      "rating": 4.0,
+      "rating_count": 5425,
+      "popularity": 0.43,
+      "crowd_level": 0.19,
+      "avg_visit_minutes": 135,
+      "entry_fee_inr": 0.0,
+      "intensity": 3,
+      "opening_hours": {
+        "always_open": true,
+        "weekly": {}
+      },
+      "closed_months": [],
+      "best_months": [
+        1,
+        2,
+        3,
+        11,
+        12
+      ],
+      "best_times_of_day": [],
+      "family_friendly": null,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_cabo_de_rama_fort",
+      "destination_id": "goa",
+      "name": "Cabo de Rama Fort",
+      "category": "historical",
+      "tags": [
+        "history",
+        "scenic_views",
+        "photography"
+      ],
+      "location": {
+        "latitude": 15.089,
+        "longitude": 73.924
+      },
+      "rating": 3.8,
+      "rating_count": 2602,
+      "popularity": 0.4,
+      "crowd_level": 0.24,
+      "avg_visit_minutes": 90,
+      "entry_fee_inr": 0.0,
+      "intensity": 2,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "09:00",
+              "close": "17:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "09:00",
+              "close": "17:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "09:00",
+              "close": "17:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "09:00",
+              "close": "17:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "09:00",
+              "close": "17:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "09:00",
+              "close": "17:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "09:00",
+              "close": "17:30"
+            }
+          ]
+        }
+      },
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": null,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_cotigao_sanctuary",
+      "destination_id": "goa",
+      "name": "Cotigao Wildlife Sanctuary",
+      "category": "wildlife",
+      "tags": [
+        "wildlife",
+        "nature",
+        "hiking"
+      ],
+      "location": {
+        "latitude": 15.1,
+        "longitude": 74.17
+      },
+      "rating": 3.8,
+      "rating_count": 5952,
+      "popularity": 0.32,
+      "crowd_level": 0.07,
+      "avg_visit_minutes": 180,
+      "entry_fee_inr": null,
+      "intensity": 3,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "07:30",
+              "close": "17:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "07:30",
+              "close": "17:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "07:30",
+              "close": "17:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "07:30",
+              "close": "17:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "07:30",
+              "close": "17:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "07:30",
+              "close": "17:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "07:30",
+              "close": "17:30"
+            }
+          ]
+        }
+      },
+      "closed_months": [
+        6,
+        7,
+        8
+      ],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": null,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.2,
+      "id": "goa_margao_market",
+      "destination_id": "goa",
+      "name": "Margao Municipal Market",
+      "category": "market",
+      "tags": [
+        "markets",
+        "food",
+        "shopping",
+        "local_experiences"
+      ],
+      "location": {
+        "latitude": 15.274,
+        "longitude": 73.958
+      },
+      "rating": 4.1,
+      "rating_count": 7021,
+      "popularity": 0.38,
+      "crowd_level": 0.61,
+      "avg_visit_minutes": 75,
+      "entry_fee_inr": 0.0,
+      "intensity": 1,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "09:00",
+              "close": "19:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "09:00",
+              "close": "19:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "09:00",
+              "close": "19:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "09:00",
+              "close": "19:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "09:00",
+              "close": "19:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "09:00",
+              "close": "19:30"
+            }
+          ]
+        }
+      },
+      "closed_months": [],
+      "best_months": [],
+      "best_times_of_day": [],
+      "family_friendly": null,
+      "wheelchair_accessible": null,
+      "description": "SYNTHETIC DEV RECORD: real landmark name/approx. location; all other attributes are generated and NOT verified."
+    }
+  ]
+}

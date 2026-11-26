@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Create Plan — MOVA</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/plans.css">
+
+</head>
+
+
+<body>
+
+    <div class="site-background">
+
+        <div class="site-shell">
+
+            <!-- ================================
+                 NAVBAR
+            ================================= -->
+
+            <header id="navbar"></header>
+
+            <div class="planner-progress" aria-label="Trip form progress">
+                <span class="planner-progress-track"><span id="planner-progress-fill"></span></span>
+                <strong id="planner-progress-text">0% COMPLETE</strong>
+            </div>
+
+
+            <main class="create-plan-page">
+
+
+                <!-- ================================
+                     PLANNER HEADER
+                ================================= -->
+
+                <section class="planner-header">
+
+                    <div>
+
+                        <div class="section-number">
+                            MY PLANS / NEW JOURNEY
+                        </div>
+
+                        <h1>
+                            LET'S BUILD
+                            <span>YOUR TRIP.</span>
+                        </h1>
+
+                        <p>
+                            Tell us the basics first. MOVA will build the itinerary with its planning engine, then you can change it later.
+                        </p>
+
+                    </div>
+
+
+                    <div class="planner-step-indicator">
+
+                        <span class="planner-step-current">
+                            01
+                        </span>
+
+                        <span>
+                            / 01
+                        </span>
+
+                    </div>
+
+                </section>
+
+
+                <!-- ================================
+                     PLAN FORM
+                ================================= -->
+
+                <form
+                    id="create-plan-form"
+                    class="create-plan-form"
+                >
+
+
+                    <!-- =================================
+                         DESTINATION
+                    ================================== -->
+
+                    <section class="planner-section">
+
+                        <div class="planner-section-heading">
+
+                            <span class="planner-section-number">
+                                01
+                            </span>
+
+                            <div>
+
+                                <span class="planner-label">
+                                    DESTINATION
+                                </span>
+
+                                <h2>
+                                    WHERE ARE
+                                    <span>YOU GOING?</span>
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="destination-input-area">
+
+                            <label for="destination-search" class="form-label">PRIMARY DESTINATION</label>
+
+                            <input
+                                type="text"
+                                id="destination-search"
+                                name="destination"
+                                class="planner-input"
+                                placeholder="Search a city, state or destination..."
+                                autocomplete="off"
+                                required
+                            >
+
+                            <div id="destination-results" class="destination-results"></div>
+
+                            <div class="multi-destination-box">
+                                <div class="multi-destination-head">
+                                    <div>
+                                        <span class="planner-label">MULTI-STOP JOURNEY</span>
+                                        <strong>VISITING MORE THAN ONE PLACE?</strong>
+                                    </div>
+                                    <button type="button" class="plan-small-action" id="add-destination-button">+ ADD STOP</button>
+                                </div>
+                                <p class="field-note">Add other states, cities or destinations. MOVA will treat them as part of the same journey.</p>
+                                <div id="selected-destinations" class="selected-destinations"></div>
+                                <input type="hidden" id="destination-list" name="destinationList">
+                            </div>
+
+                            <div class="must-visit-box">
+                                <div class="multi-destination-head">
+                                    <div>
+                                        <span class="planner-label">MUST VISIT</span>
+                                        <strong>ALREADY HAVE PLACES IN MIND?</strong>
+                                    </div>
+                                    <button type="button" class="plan-small-action" id="add-must-visit">+ ADD PLACE</button>
+                                </div>
+                                <p class="field-note">Add at least two places you already know you want to see. MOVA will preserve these preferences when the planner data supports them.</p>
+                                <div id="must-visit-list" class="must-visit-list"></div>
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =================================
+                         DATES
+                    ================================== -->
+
+                    <section class="planner-section">
+
+                        <div class="planner-section-heading">
+
+                            <span class="planner-section-number">
+                                02
+                            </span>
+
+                            <div>
+
+                                <span class="planner-label">
+                                    DATES
+                                </span>
+
+                                <h2>
+                                    WHEN ARE
+                                    <span>YOU GOING?</span>
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="date-grid">
+
+                            <div class="form-field">
+
+                                <label
+                                    for="start-date"
+                                    class="form-label"
+                                >
+                                    START DATE
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="start-date"
+                                    name="startDate"
+                                    class="planner-input"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <div class="form-field">
+
+                                <label
+                                    for="end-date"
+                                    class="form-label"
+                                >
+                                    END DATE
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="end-date"
+                                    name="endDate"
+                                    class="planner-input"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =================================
+                         STARTING LOCATION
+                    ================================== -->
+
+                    <section class="planner-section">
+                        <div class="planner-section-heading">
+                            <span class="planner-section-number">03</span>
+                            <div>
+                                <span class="planner-label">STARTING POINT</span>
+                                <h2>WHERE ARE <span>YOU STARTING?</span></h2>
+                            </div>
+                        </div>
+                        <div class="origin-card">
+                            <div>
+                                <strong id="origin-status">LOCATION NOT ADDED</strong>
+                                <p id="origin-message">Allow location access so MOVA can estimate the journey distance and suggest a practical way to reach your first stop.</p>
+                            </div>
+                            <button type="button" class="plan-small-action" id="use-my-location">USE MY LOCATION</button>
+                        </div>
+                        <div class="origin-manual">
+                            <label for="origin-name" class="form-label">OR ENTER STARTING CITY</label>
+                            <input type="text" id="origin-name" name="originName" class="planner-input" placeholder="e.g. Hyderabad">
+                        </div>
+                        <input type="hidden" id="origin-lat" name="originLat">
+                        <input type="hidden" id="origin-lon" name="originLon">
+                    </section>
+
+
+                    <!-- =================================
+                         TRAVELLERS
+                    ================================== -->
+
+                    <section class="planner-section">
+
+                        <div class="planner-section-heading">
+
+                            <span class="planner-section-number">
+                                04
+                            </span>
+
+                            <div>
+
+                                <span class="planner-label">
+                                    TRAVELLERS
+                                </span>
+
+                                <h2>
+                                    WHO'S
+                                    <span>COMING?</span>
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="traveller-selector">
+
+                            <div class="traveller-info">
+
+                                <strong>
+                                    PEOPLE
+                                </strong>
+
+                                <span>
+                                    Including you
+                                </span>
+
+                            </div>
+
+
+                            <div class="number-control">
+
+                                <button
+                                    type="button"
+                                    id="travellers-minus"
+                                    aria-label="Remove traveller"
+                                >
+                                    −
+                                </button>
+
+                                <output
+                                    id="travellers-count"
+                                >
+                                    1
+                                </output>
+
+                                <button
+                                    type="button"
+                                    id="travellers-plus"
+                                    aria-label="Add traveller"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =================================
+                         TRIP TYPE
+                    ================================== -->
+
+                    <section class="planner-section">
+
+                        <div class="planner-section-heading">
+
+                            <span class="planner-section-number">
+                                05
+                            </span>
+
+                            <div>
+
+                                <span class="planner-label">
+                                    TRIP TYPE
+                                </span>
+
+                                <h2>
+                                    WHAT KIND OF
+                                    <span>TRIP IS THIS?</span>
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="option-grid">
+
+                            <label class="option-card">
+
+                                <input
+                                    type="radio"
+                                    name="tripType"
+                                    value="Solo"
+                                    required
+                                >
+
+                                <span class="option-card-content">
+                                    <strong>SOLO</strong>
+                                    <small>Just me</small>
+                                </span>
+
+                            </label>
+
+
+                            <label class="option-card">
+
+                                <input
+                                    type="radio"
+                                    name="tripType"
+                                    value="Friends"
+                                >
+
+                                <span class="option-card-content">
+                                    <strong>FRIENDS</strong>
+                                    <small>Group trip</small>
+                                </span>
+
+                            </label>
+
+
+                            <label class="option-card">
+
+                                <input
+                                    type="radio"
+                                    name="tripType"
+                                    value="Family"
+                                >
+
+                                <span class="option-card-content">
+                                    <strong>FAMILY</strong>
+                                    <small>Family journey</small>
+                                </span>
+
+                            </label>
+
+
+                            <label class="option-card">
+
+                                <input
+                                    type="radio"
+                                    name="tripType"
+                                    value="Couple"
+                                >
+
+                                <span class="option-card-content">
+                                    <strong>COUPLE</strong>
+                                    <small>Two travellers</small>
+                                </span>
+
+                            </label>
+
+
+                            <label class="option-card">
+
+                                <input
+                                    type="radio"
+                                    name="tripType"
+                                    value="Group"
+                                >
+
+                                <span class="option-card-content">
+                                    <strong>GROUP</strong>
+                                    <small>Friends or larger group</small>
+                                </span>
+
+                            </label>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =================================
+                         BUDGET
+                    ================================== -->
+
+                    <section class="planner-section">
+
+                        <div class="planner-section-heading">
+
+                            <span class="planner-section-number">
+                                06
+                            </span>
+
+                            <div>
+
+                                <span class="planner-label">
+                                    BUDGET
+                                </span>
+
+                                <h2>
+                                    HOW MUCH DO
+                                    <span>YOU WANT TO SPEND?</span>
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="budget-input">
+
+                            <span class="currency-symbol">
+                                ₹
+                            </span>
+
+                            <input
+                                type="number"
+                                id="budget"
+                                name="budget"
+                                class="budget-number-input"
+                                placeholder="20000"
+                                min="0"
+                                step="500"
+                                required
+                            >
+
+                        </div>
+
+
+                        <p class="field-note">
+                            This is your total trip budget,
+                            not including anything you haven't
+                            decided yet.
+                        </p>
+
+                    </section>
+
+
+                    <!-- =================================
+                         INTERESTS
+                    ================================== -->
+
+                    <section class="planner-section">
+
+                        <div class="planner-section-heading">
+
+                            <span class="planner-section-number">
+                                07
+                            </span>
+
+                            <div>
+
+                                <span class="planner-label">
+                                    INTERESTS
+                                </span>
+
+                                <h2>
+                                    WHAT DO YOU
+                                    <span>WANT TO DO?</span>
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="tag-grid">
+
+                            <label class="tag-option">
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="beaches"
+                                >
+                                <span>BEACHES</span>
+                            </label>
+
+                            <label class="tag-option">
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="food"
+                                >
+                                <span>FOOD</span>
+                            </label>
+
+                            <label class="tag-option">
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="culture"
+                                >
+                                <span>CULTURE</span>
+                            </label>
+
+                            <label class="tag-option">
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="history"
+                                >
+                                <span>HISTORY</span>
+                            </label>
+
+                            <label class="tag-option">
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="nature"
+                                >
+                                <span>NATURE</span>
+                            </label>
+
+                            <label class="tag-option">
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="adventure"
+                                >
+                                <span>ADVENTURE</span>
+                            </label>
+
+                            <label class="tag-option">
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="shopping"
+                                >
+                                <span>SHOPPING</span>
+                            </label>
+
+                            <label class="tag-option">
+                                <input
+                                    type="checkbox"
+                                    name="interests"
+                                    value="nightlife"
+                                >
+                                <span>NIGHTLIFE</span>
+                            </label>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =================================
+                         DISLIKES
+                    ================================== -->
+
+                    <section class="planner-section">
+
+                        <div class="planner-section-heading">
+
+                            <span class="planner-section-number">
+                                08
+                            </span>
+
+                            <div>
+
+                                <span class="planner-label">
+                                    AVOID
+                                </span>
+
+                                <h2>
+                                    WHAT SHOULD WE
+                                    <span>SKIP?</span>
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="tag-grid">
+
+                            <label class="tag-option avoid-option">
+                                <input
+                                    type="checkbox"
+                                    name="dislikes"
+                                    value="temples"
+                                >
+                                <span>TEMPLES</span>
+                            </label>
+
+                            <label class="tag-option avoid-option">
+                                <input
+                                    type="checkbox"
+                                    name="dislikes"
+                                    value="clubs"
+                                >
+                                <span>CLUBS</span>
+                            </label>
+
+                            <label class="tag-option avoid-option">
+                                <input
+                                    type="checkbox"
+                                    name="dislikes"
+                                    value="crowds"
+                                >
+                                <span>CROWDS</span>
+                            </label>
+
+                            <label class="tag-option avoid-option">
+                                <input
+                                    type="checkbox"
+                                    name="dislikes"
+                                    value="long-travel"
+                                >
+                                <span>LONG TRAVEL</span>
+                            </label>
+
+                            <label class="tag-option avoid-option">
+                                <input
+                                    type="checkbox"
+                                    name="dislikes"
+                                    value="adventure"
+                                >
+                                <span>ADVENTURE</span>
+                            </label>
+
+                            <label class="tag-option avoid-option">
+                                <input
+                                    type="checkbox"
+                                    name="dislikes"
+                                    value="nightlife"
+                                >
+                                <span>NIGHTLIFE</span>
+                            </label>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- =================================
+                         INVITE PEOPLE
+                    ================================== -->
+                    <section class="planner-section">
+                        <div class="planner-section-heading">
+                            <span class="planner-section-number">09</span>
+                            <div>
+                                <span class="planner-label">TRIP CREW</span>
+                                <h2>WHO SHOULD <span>JOIN THE PLAN?</span></h2>
+                            </div>
+                        </div>
+                        <div class="invite-row">
+                            <input type="text" id="invite-person" class="planner-input" placeholder="Name or email address">
+                            <button type="button" class="plan-small-action" id="add-invite">+ INVITE</button>
+                        </div>
+                        <div id="invite-list" class="invite-list"></div>
+                        <p class="field-note">Invites are saved with this trip locally for the project demo. Group members can collaborate from the plan dashboard.</p>
+                    </section>
+
+
+                    <!-- =================================
+                         TRANSPORT
+                    ================================== -->
+
+                    <section class="planner-section">
+
+                        <div class="planner-section-heading">
+
+                            <span class="planner-section-number">
+                                10
+                            </span>
+
+                            <div>
+
+                                <span class="planner-label">
+                                    TRANSPORT
+                                </span>
+
+                                <h2>
+                                    HOW DO YOU
+                                    <span>WANT TO TRAVEL?</span>
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="form-section-title">PREFERRED TRANSPORT METHODS (SELECT MULTIPLE)</div>
+                        <div class="option-grid transport-grid">
+                            <label class="option-card"><input type="checkbox" name="preferred_transport" value="flight"><span class="option-card-content"><strong>FLIGHT</strong><small>Fly between cities</small></span></label>
+                            <label class="option-card"><input type="checkbox" name="preferred_transport" value="train"><span class="option-card-content"><strong>TRAIN</strong><small>Rail travel</small></span></label>
+                            <label class="option-card"><input type="checkbox" name="preferred_transport" value="bus"><span class="option-card-content"><strong>BUS</strong><small>Intercity bus</small></span></label>
+                            <label class="option-card"><input type="checkbox" name="preferred_transport" value="car"><span class="option-card-content"><strong>SELF DRIVE</strong><small>Drive yourself</small></span></label>
+                        </div>
+
+                        <br><div class="form-section-title">AVOID TRANSPORT METHODS</div>
+                        <div class="option-grid transport-grid">
+                            <label class="option-card"><input type="checkbox" name="avoid_transport" value="flight"><span class="option-card-content"><strong>FLIGHT</strong><small>Avoid flying</small></span></label>
+                            <label class="option-card"><input type="checkbox" name="avoid_transport" value="train"><span class="option-card-content"><strong>TRAIN</strong><small>Avoid rail travel</small></span></label>
+                            <label class="option-card"><input type="checkbox" name="avoid_transport" value="bus"><span class="option-card-content"><strong>BUS</strong><small>Avoid intercity bus</small></span></label>
+                            <label class="option-card"><input type="checkbox" name="avoid_transport" value="car"><span class="option-card-content"><strong>SELF DRIVE</strong><small>Avoid driving</small></span></label>
+                        </div>
+
+
+
+                        <div class="travel-cost-fields" id="travel-cost-fields">
+                            <div class="cost-input-group">
+                                <label for="food-budget" class="form-label">FOOD BUDGET / PERSON / DAY</label>
+                                <div class="cost-input-wrap"><span>₹</span><input type="number" id="food-budget" name="foodBudget" class="planner-input" min="0" step="50" placeholder="e.g. 600" required></div>
+                                <p class="field-note">MOVA multiplies this by the number of travellers and trip days.</p>
+                            </div>
+
+                            <div class="self-drive-fields" id="self-drive-fields" hidden>
+                                <div class="self-drive-heading">SELF-DRIVE FUEL COST</div>
+                                <div class="self-drive-grid">
+                                    <div class="cost-input-group">
+                                        <label for="fuel-type" class="form-label">FUEL</label>
+                                        <select id="fuel-type" name="fuelType" class="planner-input">
+                                            <option value="petrol">PETROL</option><option value="diesel">DIESEL</option>
+                                        </select>
+                                    </div>
+                                    <div class="cost-input-group">
+                                        <label for="mileage" class="form-label">MILEAGE (KM/L)</label>
+                                        <input type="number" id="mileage" name="mileage" class="planner-input" min="1" max="100" step="0.1" placeholder="e.g. 15">
+                                    </div>
+                                    <div class="cost-input-group">
+                                        <label for="fuel-price" class="form-label">FUEL PRICE / LITRE</label>
+                                        <div class="cost-input-wrap"><span>₹</span><input type="number" id="fuel-price" name="fuelPrice" class="planner-input" min="0" step="0.1" placeholder="Enter current price"></div>
+                                    </div>
+                                </div>
+                                <p class="field-note">Fuel cost = live road distance × 2 ÷ mileage × fuel price. The ×2 is the return journey assumption.</p>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <!-- =================================
+                         PLANNER ENGINE STATUS
+                    ================================== -->
+
+                    <section class="planner-engine-status" id="planner-engine-status" aria-live="polite">
+                        <div class="planner-engine-status-mark">✦</div>
+                        <div>
+                            <strong>PLANNING ENGINE</strong>
+                            <p id="planner-engine-message">
+                                Your answers will be sent to MOVA's travel intelligence engine.
+                            </p>
+                        </div>
+                        <button
+                            type="button"
+                            class="plan-small-action planner-engine-retry"
+                            id="planner-engine-retry"
+                        >
+                            RETRY CONNECTION
+                        </button>
+                    </section>
+
+
+                    <!-- =================================
+                         SUBMIT
+                    ================================== -->
+
+                    <section class="planner-submit-section">
+
+                        <div>
+
+                            <span class="section-number">
+                                READY?
+                            </span>
+
+                            <h2>
+                                LET'S BUILD
+                                <span>THE TRIP.</span>
+                            </h2>
+
+                        </div>
+
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary planner-submit-button"
+                        >
+                            BUILD MY REAL PLAN
+                            <span class="button-arrow">
+                                →
+                            </span>
+                        </button>
+
+                    </section>
+
+
+                </form>
+
+                <dialog id="must-visit-dialog" class="planner-dialog" aria-labelledby="must-visit-dialog-title">
+                    <form method="dialog" id="must-visit-dialog-form">
+                        <span class="planner-label">MUST VISIT</span>
+                        <h2 id="must-visit-dialog-title">PIN A PLACE.</h2>
+                        <p class="field-note">Add a place you already know you want to see. MOVA will try to preserve it when the planner data supports it.</p>
+                        <label for="must-visit-input" class="form-label">PLACE NAME</label>
+                        <input id="must-visit-input" class="planner-input" type="text" maxlength="100" placeholder="e.g. Baga Beach" autocomplete="off">
+                        <div class="planner-dialog-actions">
+                            <button type="button" class="btn btn-secondary" id="cancel-must-visit">CANCEL</button>
+                            <button type="submit" class="btn btn-primary" id="save-must-visit">ADD PLACE →</button>
+                        </div>
+                    </form>
+                </dialog>
+
+            </main>
+
+
+            <footer id="footer"></footer>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="../js/firebase-config.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/global.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/plans.js"></script>
+
+</body>
+
+</html>

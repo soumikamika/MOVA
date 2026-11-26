@@ -1,0 +1,247 @@
+[
+    {
+        "id": "andhra-pradesh",
+        "name": "Andhra Pradesh",
+        "region": "South India",
+        "description": "Temples, beaches, heritage towns and coastal journeys.",
+        "image": "assets/images/destinations/andhra-pradesh.webp"
+    },
+    {
+        "id": "arunachal-pradesh",
+        "name": "Arunachal Pradesh",
+        "region": "Northeast India",
+        "description": "Mountain valleys, monasteries and spectacular Himalayan landscapes.",
+        "image": "assets/images/destinations/arunachal-pradesh.webp"
+    },
+    {
+        "id": "assam",
+        "name": "Assam",
+        "region": "Northeast India",
+        "description": "Tea gardens, wildlife, river islands and rich local culture.",
+        "image": "assets/images/destinations/assam.webp"
+    },
+    {
+        "id": "bihar",
+        "name": "Bihar",
+        "region": "East India",
+        "description": "Ancient history, Buddhist heritage and important pilgrimage sites.",
+        "image": "assets/images/destinations/bihar.webp"
+    },
+    {
+        "id": "chhattisgarh",
+        "name": "Chhattisgarh",
+        "region": "Central India",
+        "description": "Waterfalls, forests, tribal culture and hidden natural landscapes.",
+        "image": "assets/images/destinations/chhattisgarh.webp"
+    },
+    {
+        "id": "goa",
+        "name": "Goa",
+        "region": "West India",
+        "description": "Beaches, food, nightlife and relaxed coastal escapes.",
+        "image": "assets/images/destinations/goa.webp"
+    },
+    {
+        "id": "gujarat",
+        "name": "Gujarat",
+        "region": "West India",
+        "description": "Historic cities, colourful culture, wildlife and dramatic landscapes.",
+        "image": "assets/images/destinations/gujarat.webp"
+    },
+    {
+        "id": "haryana",
+        "name": "Haryana",
+        "region": "North India",
+        "description": "Historic sites, countryside experiences and modern urban hubs.",
+        "image": "assets/images/destinations/haryana.webp"
+    },
+    {
+        "id": "himachal-pradesh",
+        "name": "Himachal Pradesh",
+        "region": "North India",
+        "description": "Mountain roads, forests, villages and high-altitude escapes.",
+        "image": "assets/images/states/himachal-pradesh.webp"
+    },
+    {
+        "id": "jharkhand",
+        "name": "Jharkhand",
+        "region": "East India",
+        "description": "Forests, waterfalls, wildlife and vibrant tribal traditions.",
+        "image": "assets/images/states/jharkhand.webp"
+    },
+    {
+        "id": "karnataka",
+        "name": "Karnataka",
+        "region": "South India",
+        "description": "Ancient ruins, coffee country, beaches and vibrant cities.",
+        "image": "assets/images/states/karnataka.webp"
+    },
+    {
+        "id": "kerala",
+        "name": "Kerala",
+        "region": "South India",
+        "description": "Backwaters, tea hills, beaches and slow journeys.",
+        "image": "assets/images/states/kerala.webp"
+    },
+    {
+        "id": "madhya-pradesh",
+        "name": "Madhya Pradesh",
+        "region": "Central India",
+        "description": "Wildlife, ancient temples, forts and remarkable historical sites.",
+        "image": "assets/images/states/madhya-pradesh.webp"
+    },
+    {
+        "id": "maharashtra",
+        "name": "Maharashtra",
+        "region": "West India",
+        "description": "Bustling cities, hill stations, forts and a spectacular coastline.",
+        "image": "assets/images/states/maharashtra.webp"
+    },
+    {
+        "id": "manipur",
+        "name": "Manipur",
+        "region": "Northeast India",
+        "description": "Lakes, hills, traditional culture and peaceful landscapes.",
+        "image": "assets/images/states/manipur.webp"
+    },
+    {
+        "id": "meghalaya",
+        "name": "Meghalaya",
+        "region": "Northeast India",
+        "description": "Living root bridges, waterfalls, caves and misty mountains.",
+        "image": "assets/images/states/meghalaya.webp"
+    },
+    {
+        "id": "mizoram",
+        "name": "Mizoram",
+        "region": "Northeast India",
+        "description": "Rolling hills, forests, villages and distinctive local culture.",
+        "image": "assets/images/states/mizoram.webp"
+    },
+    {
+        "id": "nagaland",
+        "name": "Nagaland",
+        "region": "Northeast India",
+        "description": "Mountain villages, festivals, food and diverse traditions.",
+        "image": "assets/images/states/nagaland.webp"
+    },
+    {
+        "id": "odisha",
+        "name": "Odisha",
+        "region": "East India",
+        "description": "Ancient temples, beaches, crafts and distinctive coastal culture.",
+        "image": "assets/images/states/odisha.webp"
+    },
+    {
+        "id": "punjab",
+        "name": "Punjab",
+        "region": "North India",
+        "description": "Rich food, historic landmarks, music and vibrant Punjabi culture.",
+        "image": "assets/images/states/punjab.webp"
+    },
+    {
+        "id": "rajasthan",
+        "name": "Rajasthan",
+        "region": "North India",
+        "description": "Forts, deserts, colourful streets and royal cities.",
+        "image": "assets/images/states/rajasthan.webp"
+    },
+    {
+        "id": "sikkim",
+        "name": "Sikkim",
+        "region": "Northeast India",
+        "description": "Himalayan views, monasteries, lakes and mountain towns.",
+        "image": "assets/images/states/sikkim.webp"
+    },
+    {
+        "id": "tamil-nadu",
+        "name": "Tamil Nadu",
+        "region": "South India",
+        "description": "Grand temples, coastal towns, heritage cities and incredible food.",
+        "image": "assets/images/states/tamil-nadu.webp"
+    },
+    {
+        "id": "telangana",
+        "name": "Telangana",
+        "region": "South India",
+        "description": "Historic forts, Hyderabad's culture, food and unique landscapes.",
+        "image": "assets/images/states/telangana.webp"
+    },
+    {
+        "id": "tripura",
+        "name": "Tripura",
+        "region": "Northeast India",
+        "description": "Palaces, forests, lakes and lesser-known cultural treasures.",
+        "image": "assets/images/states/tripura.webp"
+    },
+    {
+        "id": "uttar-pradesh",
+        "name": "Uttar Pradesh",
+        "region": "North India",
+        "description": "Monuments, pilgrimage cities, ancient history and extraordinary food.",
+        "image": "assets/images/states/uttar-pradesh.webp"
+    },
+    {
+        "id": "uttarakhand",
+        "name": "Uttarakhand",
+        "region": "North India",
+        "description": "Himalayan valleys, spiritual towns, forests and adventure.",
+        "image": "assets/images/destinations/uttarakhand.webp"
+    },
+    {
+        "id": "west-bengal",
+        "name": "West Bengal",
+        "region": "East India",
+        "description": "Kolkata, Himalayan towns, tea country, culture and cuisine.",
+        "image": "assets/images/states/west-bengal.webp"
+    },
+    {
+        "id": "chandigarh",
+        "name": "Chandigarh",
+        "region": "Union Territory",
+        "description": "Planned city life, modern architecture, gardens and relaxed urban escapes.",
+        "image": "assets/images/union-territories/chandigarh.webp"
+    },
+    {
+        "id": "dadra-and-nagar-haveli-and-daman-and-diu",
+        "name": "Dadra & Nagar Haveli and Daman & Diu",
+        "region": "Union Territory",
+        "description": "Coastal escapes, Portuguese heritage, forests and laid-back getaways.",
+        "image": "assets/images/union-territories/dadra-and-nagar-haveli-and-daman-and-diu.webp"
+    },
+    {
+        "id": "delhi",
+        "name": "Delhi",
+        "region": "Union Territory",
+        "description": "Historic monuments, street food, markets and the heart of modern India.",
+        "image": "assets/images/union-territories/delhi.webp"
+    },
+    {
+        "id": "jammu-and-kashmir",
+        "name": "Jammu & Kashmir",
+        "region": "Union Territory",
+        "description": "Mountain valleys, lakes, meadows and some of India's most iconic landscapes.",
+        "image": "assets/images/union-territories/jammu-and-kashmir.webp"
+    },
+    {
+        "id": "ladakh",
+        "name": "Ladakh",
+        "region": "Union Territory",
+        "description": "High-altitude deserts, dramatic mountains, monasteries and unforgettable road journeys.",
+        "image": "assets/images/union-territories/ladakh.webp"
+    },
+    {
+        "id": "lakshadweep",
+        "name": "Lakshadweep",
+        "region": "Union Territory",
+        "description": "Turquoise lagoons, coral islands, beaches and peaceful tropical escapes.",
+        "image": "assets/images/union-territories/lakshadweep.webp"
+    },
+    {
+        "id": "puducherry",
+        "name": "Puducherry",
+        "region": "Union Territory",
+        "description": "French-inspired streets, beaches, cafés and a distinctive coastal atmosphere.",
+        "image": "assets/images/union-territories/puducherry.webp"
+    }
+]

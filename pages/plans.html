@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MOVA — build, manage and revisit your trips.">
+    <title>My Plans — MOVA</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/plans.css">
+</head>
+<body>
+    <div class="site-background">
+        <div class="site-shell">
+            <header id="navbar"></header>
+
+            <main class="plans-page">
+                <section class="plans-header">
+                    <div class="plans-header-content">
+                        <div class="section-number">01 / MY PLANS</div>
+                        <h1>YOUR TRIPS. <span>YOUR WAY.</span></h1>
+                        <p>
+                            Build, manage and revisit journeys around your
+                            time, budget, people and the way you actually want to travel.
+                        </p>
+                    </div>
+
+                    <div class="plans-header-action">
+                        <div class="create-plan-card">
+                            <span class="create-plan-label">START A NEW JOURNEY</span>
+                            <h2>WHERE ARE<br>YOU GOING?</h2>
+                            <a href="create-plan.html" class="btn btn-primary">
+                                CREATE NEW PLAN
+                                <span class="button-arrow">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="plans-content">
+                    <div class="plans-section-heading">
+                        <div>
+                            <span class="plans-label">YOUR TRIPS</span>
+                            <h2>UPCOMING</h2>
+                        </div>
+                        <span id="plans-count" class="plans-count">0 TRIPS</span>
+                    </div>
+
+                    <div id="plans-list" class="plans-list"></div>
+
+                    <div id="empty-plans" class="empty-plans">
+                        <div class="empty-plans-mark">✦</div>
+                        <div>
+                            <span class="plans-label">NOTHING HERE YET</span>
+                            <h3>YOUR NEXT JOURNEY STARTS HERE.</h3>
+                            <p>Create your first plan and let MOVA build the itinerary.</p>
+                        </div>
+                        <a href="create-plan.html" class="btn btn-primary">
+                            CREATE A PLAN
+                            <span class="button-arrow">→</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="plans-intro-section">
+                    <div class="section-number">03 / HOW PLANNING WORKS</div>
+
+                    <div class="plans-intro-grid">
+                        <h2>NOT JUST A LIST <span>OF PLACES.</span></h2>
+                        <div class="plans-intro-copy">
+                            <p>MOVA is designed to build trips that actually fit together.</p>
+                            <p>
+                                Your time, budget, travellers, interests and travel
+                                preferences become part of the plan from the beginning.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="planning-principles">
+                        <article class="planning-principle">
+                            <span class="principle-number">01</span>
+                            <strong>YOUR TIME</strong>
+                            <p>Build around your actual travel dates and available time.</p>
+                        </article>
+                        <article class="planning-principle">
+                            <span class="principle-number">02</span>
+                            <strong>YOUR BUDGET</strong>
+                            <p>Keep the trip within the amount you actually want to spend.</p>
+                        </article>
+                        <article class="planning-principle">
+                            <span class="principle-number">03</span>
+                            <strong>YOUR PEOPLE</strong>
+                            <p>Plan differently for solo, family and group travel.</p>
+                        </article>
+                        <article class="planning-principle">
+                            <span class="principle-number">04</span>
+                            <strong>YOUR INTERESTS</strong>
+                            <p>Tell MOVA what you want and what you want to avoid.</p>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+            <footer id="footer"></footer>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="../js/firebase-config.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/global.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/plans.js"></script>
+</body>
+</html>

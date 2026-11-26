@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MOVA area discovery — sourced tourist places, heritage sites, temples, nature and attractions."
+    />
+    <title>Explore Area — MOVA</title>
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/region-details.css" />
+  </head>
+  <body>
+    <div class="site-background">
+      <div class="site-shell">
+        <header id="navbar"></header>
+        <main class="region-page">
+          <section class="region-hero">
+            <div class="region-copy">
+              <a class="back-link" href="discover.html">← BACK TO DISCOVER</a>
+              <div class="section-number">01 / AREA EXPLORER</div>
+              <h1 id="region-name">LOADING AREA…</h1>
+              <p id="region-summary">
+                Finding real places, attractions and heritage inside this area.
+              </p>
+              <div class="region-actions">
+                <a
+                  class="btn btn-primary"
+                  id="region-plan"
+                  href="create-plan.html"
+                  >MAKE A PLAN ↗</a
+                ><a class="btn btn-secondary" href="#region-places"
+                  >EXPLORE PLACES ↓</a
+                >
+              </div>
+            </div>
+            <div class="region-hero-image" id="region-hero-image">
+              <div class="region-image-empty">
+                <strong>EXPLORE THIS DESTINATION</strong>
+                <span>Destination imagery will appear when available.</span>
+              </div>
+            </div>
+          </section>
+          <section class="region-source-bar" aria-label="Data source">
+            <div><span class="source-dot"></span><strong id="region-source-status">SOURCED DISCOVERY</strong></div>
+            <span id="region-source-detail">OpenStreetMap data · imagery when available</span>
+          </section>
+          <section class="region-toolbar" id="region-places">
+            <div>
+              <div class="section-number">02 / PLACES INSIDE THIS AREA</div>
+              <h2>SEE WHAT'S ACTUALLY HERE.</h2>
+              <p>
+                Tourist attractions, temples, monuments, forts, museums, nature
+                spots and other mapped places are loaded for this area. Unknown
+                facts stay unknown.
+              </p>
+            </div>
+            <div class="region-count" id="region-count">SEARCHING…</div>
+          </section>
+          <div class="region-search-row">
+            <label class="sr-only" for="region-search">Search places in this area</label>
+            <input id="region-search" type="search" placeholder="Search places, temples, forts, waterfalls…" autocomplete="off" />
+            <span id="region-search-count" aria-live="polite">Search loaded places</span>
+          </div>
+          <div class="region-filters" id="region-filters">
+            <button class="region-filter active" data-filter="all">ALL</button
+            ><button class="region-filter" data-filter="heritage">
+              HERITAGE</button
+            ><button class="region-filter" data-filter="temples">TEMPLES</button
+            ><button class="region-filter" data-filter="nature">NATURE</button
+            ><button class="region-filter" data-filter="museum">MUSEUMS</button
+            ><button class="region-filter" data-filter="other">OTHER</button>
+          </div>
+          <section
+            class="region-grid"
+            id="region-grid"
+            aria-live="polite"
+          ></section>
+          <section class="nearby-section" id="nearby-section" hidden>
+            <div class="region-toolbar nearby-toolbar">
+              <div>
+                <div class="section-number">03 / NEARBY DISCOVERY</div>
+                <h2>GO A LITTLE FURTHER.</h2>
+                <p id="nearby-status">
+                  Real tourist places near this area, even when they sit outside
+                  the exact city or state boundary.
+                </p>
+              </div>
+              <div class="region-count" id="nearby-count">SEARCHING…</div>
+            </div>
+            <div
+              class="region-grid nearby-grid"
+              id="nearby-grid"
+              aria-live="polite"
+            ></div>
+          </section>
+          <section class="region-community" id="region-community" aria-labelledby="region-community-title">
+            <div class="region-toolbar">
+              <div>
+                <div class="section-number">04 / TRAVELLER COMMUNITY</div>
+                <h2 id="region-community-title">LOCAL TIPS, FROM REAL TRAVELLERS.</h2>
+                <p>Browse community posts tagged with this region, or share a recommendation. Posts are shown here and in the main Community feed.</p>
+              </div>
+              <a class="btn btn-primary" id="region-share-tip" href="community.html">SHARE A TIP ↗</a>
+            </div>
+            <div class="region-community-grid" id="region-community-grid" aria-live="polite"></div>
+          </section>
+        </main>
+        <footer id="footer"></footer>
+      </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="../js/firebase-config.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/global.js"></script>
+    <script src="../js/api.js"></script>
+    <script src="../js/region-details.js"></script>
+  </body>
+</html>

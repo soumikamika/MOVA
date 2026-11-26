@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="MOVA — your confirmed trip dashboard."><title>Plan Dashboard — MOVA</title><link rel="stylesheet" href="../css/global.css"><link rel="stylesheet" href="../css/plans.css"><link rel="stylesheet" href="../css/plan-dashboard.css"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""></head>
+<body><div class="site-background"><div class="site-shell"><header id="navbar"></header>
+<main class="dashboard-page">
+<div id="dashboard-toast" class="workspace-toast" role="status" aria-live="polite" hidden></div>
+<section class="dashboard-header"><div><span class="section-number">MY PLANS / DASHBOARD</span><h1>TRIP <span>CONTROL ROOM.</span></h1><p id="dashboard-subtitle">Your confirmed journey, in one place.</p></div><div class="dashboard-actions"><a id="edit-dashboard-plan" class="btn btn-secondary" href="#">EDIT PLAN</a><a href="plans.html" class="btn btn-primary">ALL MY PLANS</a></div></section>
+<section id="dashboard-overview" class="dashboard-overview"></section><section id="dashboard-budget" class="dashboard-budget"></section>
+<section class="dashboard-map-panel map-panel" aria-label="Trip route map"><div class="panel-heading"><div><span class="plans-label">ROUTE MAP</span><h2>YOUR JOURNEY</h2></div><span id="dashboard-map-status" class="map-status">LOADING MAP</span></div><div id="dashboard-map" class="dashboard-map"></div><div class="map-legend"><span>● START</span><span>● STOPS</span><span>— ROUTE</span></div></section>
+<section class="dashboard-grid">
+<div class="dashboard-card"><div class="panel-heading"><div><span class="plans-label">GROUP</span><h2>TRAVELLERS</h2></div></div><div id="dashboard-members"></div><div class="invite-row"><input id="dashboard-invite" class="planner-input" placeholder="Name or email"><button id="dashboard-add-invite" class="plan-small-action">+ INVITE</button></div></div>
+<div class="dashboard-card"><div class="panel-heading"><div><span class="plans-label">PREP</span><h2>CHECKLIST</h2></div></div><div id="checklist"></div><form id="todo-form" class="todo-form"><input id="todo-input" class="planner-input" placeholder="Add a task"><button class="plan-small-action" type="submit">+ ADD</button></form></div>
+<div class="dashboard-card dashboard-chat"><div class="panel-heading"><div><span class="plans-label">GROUP CHAT</span><h2>TRIP CHAT</h2></div></div><div id="group-chat" class="group-chat"></div><form id="chat-form" class="chat-form"><input id="chat-input" class="planner-input" placeholder="Message your group"><button class="plan-small-action" type="submit">SEND</button></form></div>
+</section>
+<section class="dashboard-itinerary"><div class="panel-heading"><div><span class="plans-label">CONFIRMED ITINERARY</span><h2>DAY BY DAY</h2></div><button id="dashboard-reoptimize" class="plan-small-action">RE-OPTIMIZE ↻</button></div><div id="dashboard-itinerary-list"></div></section>
+</main><footer id="footer"></footer></div></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="../js/firebase-config.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/global.js"></script><script src="../js/api.js"></script><script src="../js/plan-dashboard.js"></script></body></html>

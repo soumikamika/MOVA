@@ -1,0 +1,1639 @@
+{
+  "meta": {
+    "dataset": "goa_dev",
+    "schema_version": 1,
+    "data_source": "synthetic_dev",
+    "generated_at": "2026-10-02T15:19:15.676824Z",
+    "generated_by": "app.data.dev_data",
+    "seed": 42,
+    "disclaimer": "SYNTHETIC DEVELOPMENT DATA - NOT REAL TRAVEL INFORMATION. Landmark names/locations are approximate; all other attributes are generated for testing only."
+  },
+  "records": [
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_calangute_veg_thali",
+      "destination_id": "goa",
+      "name": "DEV Veg Thali House - Calangute",
+      "location": {
+        "latitude": 15.54134,
+        "longitude": 73.75776
+      },
+      "cuisines": [
+        "goan",
+        "indian"
+      ],
+      "dietary_options": [
+        "vegetarian",
+        "jain",
+        "vegan"
+      ],
+      "serves": [
+        "lunch",
+        "dinner"
+      ],
+      "avg_price_per_person_inr": 190.0,
+      "rating": 4.1,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_calangute_seafood",
+      "destination_id": "goa",
+      "name": "DEV Seafood Shack - Calangute",
+      "location": {
+        "latitude": 15.54541,
+        "longitude": 73.75285
+      },
+      "cuisines": [
+        "goan",
+        "seafood"
+      ],
+      "dietary_options": [
+        "non_vegetarian",
+        "gluten_free"
+      ],
+      "serves": [
+        "lunch",
+        "dinner"
+      ],
+      "avg_price_per_person_inr": 650.0,
+      "rating": 4.0,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_calangute_diner",
+      "destination_id": "goa",
+      "name": "DEV Family Diner - Calangute",
+      "location": {
+        "latitude": 15.54242,
+        "longitude": 73.75312
+      },
+      "cuisines": [
+        "indian",
+        "chinese",
+        "goan"
+      ],
+      "dietary_options": [
+        "vegetarian",
+        "non_vegetarian",
+        "halal",
+        "jain"
+      ],
+      "serves": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "avg_price_per_person_inr": 490.0,
+      "rating": 3.8,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "1": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "2": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "3": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "4": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "5": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "6": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_baga_seafood",
+      "destination_id": "goa",
+      "name": "DEV Seafood Shack - Baga",
+      "location": {
+        "latitude": 15.55164,
+        "longitude": 73.75113
+      },
+      "cuisines": [
+        "goan",
+        "seafood"
+      ],
+      "dietary_options": [
+        "non_vegetarian",
+        "gluten_free"
+      ],
+      "serves": [
+        "lunch",
+        "dinner"
+      ],
+      "avg_price_per_person_inr": 620.0,
+      "rating": 4.5,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_baga_cafe",
+      "destination_id": "goa",
+      "name": "DEV Garden Cafe - Baga",
+      "location": {
+        "latitude": 15.55344,
+        "longitude": 73.75241
+      },
+      "cuisines": [
+        "continental",
+        "cafe"
+      ],
+      "dietary_options": [
+        "vegetarian",
+        "vegan",
+        "gluten_free",
+        "eggetarian"
+      ],
+      "serves": [
+        "breakfast",
+        "lunch",
+        "snack"
+      ],
+      "avg_price_per_person_inr": 580.0,
+      "rating": 3.6,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_anjuna_cafe",
+      "destination_id": "goa",
+      "name": "DEV Garden Cafe - Anjuna",
+      "location": {
+        "latitude": 15.57635,
+        "longitude": 73.7392
+      },
+      "cuisines": [
+        "continental",
+        "cafe"
+      ],
+      "dietary_options": [
+        "vegetarian",
+        "vegan",
+        "gluten_free",
+        "eggetarian"
+      ],
+      "serves": [
+        "breakfast",
+        "lunch",
+        "snack"
+      ],
+      "avg_price_per_person_inr": 500.0,
+      "rating": 4.1,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_anjuna_seafood",
+      "destination_id": "goa",
+      "name": "DEV Seafood Shack - Anjuna",
+      "location": {
+        "latitude": 15.57028,
+        "longitude": 73.743
+      },
+      "cuisines": [
+        "goan",
+        "seafood"
+      ],
+      "dietary_options": [
+        "non_vegetarian",
+        "gluten_free"
+      ],
+      "serves": [
+        "lunch",
+        "dinner"
+      ],
+      "avg_price_per_person_inr": 890.0,
+      "rating": 3.6,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_candolim_fine",
+      "destination_id": "goa",
+      "name": "DEV Fine Dining Room - Candolim",
+      "location": {
+        "latitude": 15.52026,
+        "longitude": 73.7618
+      },
+      "cuisines": [
+        "goan",
+        "portuguese",
+        "continental"
+      ],
+      "dietary_options": [
+        "vegetarian",
+        "non_vegetarian",
+        "gluten_free"
+      ],
+      "serves": [
+        "dinner"
+      ],
+      "avg_price_per_person_inr": 2050.0,
+      "rating": 4.3,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "18:30",
+              "close": "23:00"
+            }
+          ],
+          "1": [
+            {
+              "open": "18:30",
+              "close": "23:00"
+            }
+          ],
+          "2": [
+            {
+              "open": "18:30",
+              "close": "23:00"
+            }
+          ],
+          "3": [
+            {
+              "open": "18:30",
+              "close": "23:00"
+            }
+          ],
+          "4": [
+            {
+              "open": "18:30",
+              "close": "23:00"
+            }
+          ],
+          "5": [
+            {
+              "open": "18:30",
+              "close": "23:00"
+            }
+          ],
+          "6": [
+            {
+              "open": "18:30",
+              "close": "23:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_candolim_veg_thali",
+      "destination_id": "goa",
+      "name": "DEV Veg Thali House - Candolim",
+      "location": {
+        "latitude": 15.51884,
+        "longitude": 73.76469
+      },
+      "cuisines": [
+        "goan",
+        "indian"
+      ],
+      "dietary_options": [
+        "vegetarian",
+        "jain",
+        "vegan"
+      ],
+      "serves": [
+        "lunch",
+        "dinner"
+      ],
+      "avg_price_per_person_inr": 320.0,
+      "rating": 3.6,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_panaji_veg_thali",
+      "destination_id": "goa",
+      "name": "DEV Veg Thali House - Panaji",
+      "location": {
+        "latitude": 15.50169,
+        "longitude": 73.83152
+      },
+      "cuisines": [
+        "goan",
+        "indian"
+      ],
+      "dietary_options": [
+        "vegetarian",
+        "jain",
+        "vegan"
+      ],
+      "serves": [
+        "lunch",
+        "dinner"
+      ],
+      "avg_price_per_person_inr": 310.0,
+      "rating": 4.4,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_panaji_diner",
+      "destination_id": "goa",
+      "name": "DEV Family Diner - Panaji",
+      "location": {
+        "latitude": 15.50157,
+        "longitude": 73.83094
+      },
+      "cuisines": [
+        "indian",
+        "chinese",
+        "goan"
+      ],
+      "dietary_options": [
+        "vegetarian",
+        "non_vegetarian",
+        "halal",
+        "jain"
+      ],
+      "serves": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "avg_price_per_person_inr": 330.0,
+      "rating": 4.4,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "1": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "2": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "3": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "4": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "5": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "6": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_panaji_bakery",
+      "destination_id": "goa",
+      "name": "DEV Bakery and Breakfast - Panaji",
+      "location": {
+        "latitude": 15.50063,
+        "longitude": 73.82518
+      },
+      "cuisines": [
+        "bakery",
+        "cafe"
+      ],
+      "dietary_options": [
+        "vegetarian",
+        "eggetarian",
+        "vegan"
+      ],
+      "serves": [
+        "breakfast",
+        "snack"
+      ],
+      "avg_price_per_person_inr": 240.0,
+      "rating": 3.6,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "07:00",
+              "close": "19:00"
+            }
+          ],
+          "1": [
+            {
+              "open": "07:00",
+              "close": "19:00"
+            }
+          ],
+          "2": [
+            {
+              "open": "07:00",
+              "close": "19:00"
+            }
+          ],
+          "3": [
+            {
+              "open": "07:00",
+              "close": "19:00"
+            }
+          ],
+          "4": [
+            {
+              "open": "07:00",
+              "close": "19:00"
+            }
+          ],
+          "5": [
+            {
+              "open": "07:00",
+              "close": "19:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_panaji_fine",
+      "destination_id": "goa",
+      "name": "DEV Fine Dining Room - Panaji",
+      "location": {
+        "latitude": 15.49569,
+        "longitude": 73.82858
+      },
+      "cuisines": [
+        "goan",
+        "portuguese",
+        "continental"
+      ],
+      "dietary_options": [
+        "vegetarian",
+        "non_vegetarian",
+        "gluten_free"
+      ],
+      "serves": [
+        "dinner"
+      ],
+      "avg_price_per_person_inr": 1580.0,
+      "rating": 3.8,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "18:30",
+              "close": "23:00"
+            }
+          ],
+          "1": [
+            {
+              "open": "18:30",
+              "close": "23:00"
+            }
+          ],
+          "2": [
+            {
+              "open": "18:30",
+              "close": "23:00"
+            }
+          ],
+          "3": [
+            {
+              "open": "18:30",
+              "close": "23:00"
+            }
+          ],
+          "4": [
+            {
+              "open": "18:30",
+              "close": "23:00"
+            }
+          ],
+          "5": [
+            {
+              "open": "18:30",
+              "close": "23:00"
+            }
+          ],
+          "6": [
+            {
+              "open": "18:30",
+              "close": "23:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_margao_veg_thali",
+      "destination_id": "goa",
+      "name": "DEV Veg Thali House - Margao",
+      "location": {
+        "latitude": 15.28336,
+        "longitude": 73.98224
+      },
+      "cuisines": [
+        "goan",
+        "indian"
+      ],
+      "dietary_options": [
+        "vegetarian",
+        "jain",
+        "vegan"
+      ],
+      "serves": [
+        "lunch",
+        "dinner"
+      ],
+      "avg_price_per_person_inr": 310.0,
+      "rating": 3.9,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_margao_diner",
+      "destination_id": "goa",
+      "name": "DEV Family Diner - Margao",
+      "location": {
+        "latitude": 15.28073,
+        "longitude": 73.98926
+      },
+      "cuisines": [
+        "indian",
+        "chinese",
+        "goan"
+      ],
+      "dietary_options": [
+        "vegetarian",
+        "non_vegetarian",
+        "halal",
+        "jain"
+      ],
+      "serves": [
+        "breakfast",
+        "lunch",
+        "dinner"
+      ],
+      "avg_price_per_person_inr": 280.0,
+      "rating": 4.3,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "1": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "2": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "3": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "4": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "5": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ],
+          "6": [
+            {
+              "open": "08:00",
+              "close": "23:00"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_colva_seafood",
+      "destination_id": "goa",
+      "name": "DEV Seafood Shack - Colva",
+      "location": {
+        "latitude": 15.27927,
+        "longitude": 73.91904
+      },
+      "cuisines": [
+        "goan",
+        "seafood"
+      ],
+      "dietary_options": [
+        "non_vegetarian",
+        "gluten_free"
+      ],
+      "serves": [
+        "lunch",
+        "dinner"
+      ],
+      "avg_price_per_person_inr": 600.0,
+      "rating": 3.9,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_colva_cafe",
+      "destination_id": "goa",
+      "name": "DEV Garden Cafe - Colva",
+      "location": {
+        "latitude": 15.27658,
+        "longitude": 73.92369
+      },
+      "cuisines": [
+        "continental",
+        "cafe"
+      ],
+      "dietary_options": [
+        "vegetarian",
+        "vegan",
+        "gluten_free",
+        "eggetarian"
+      ],
+      "serves": [
+        "breakfast",
+        "lunch",
+        "snack"
+      ],
+      "avg_price_per_person_inr": 450.0,
+      "rating": 4.4,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_palolem_cafe",
+      "destination_id": "goa",
+      "name": "DEV Garden Cafe - Palolem",
+      "location": {
+        "latitude": 15.01257,
+        "longitude": 74.02656
+      },
+      "cuisines": [
+        "continental",
+        "cafe"
+      ],
+      "dietary_options": [
+        "vegetarian",
+        "vegan",
+        "gluten_free",
+        "eggetarian"
+      ],
+      "serves": [
+        "breakfast",
+        "lunch",
+        "snack"
+      ],
+      "avg_price_per_person_inr": 570.0,
+      "rating": 4.5,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "07:30",
+              "close": "18:30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_palolem_seafood",
+      "destination_id": "goa",
+      "name": "DEV Seafood Shack - Palolem",
+      "location": {
+        "latitude": 15.0097,
+        "longitude": 74.02606
+      },
+      "cuisines": [
+        "goan",
+        "seafood"
+      ],
+      "dietary_options": [
+        "non_vegetarian",
+        "gluten_free"
+      ],
+      "serves": [
+        "lunch",
+        "dinner"
+      ],
+      "avg_price_per_person_inr": 740.0,
+      "rating": 4.4,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "10:00",
+              "close": "22:30"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_rest_palolem_veg_thali",
+      "destination_id": "goa",
+      "name": "DEV Veg Thali House - Palolem",
+      "location": {
+        "latitude": 15.00831,
+        "longitude": 74.0223
+      },
+      "cuisines": [
+        "goan",
+        "indian"
+      ],
+      "dietary_options": [
+        "vegetarian",
+        "jain",
+        "vegan"
+      ],
+      "serves": [
+        "lunch",
+        "dinner"
+      ],
+      "avg_price_per_person_inr": 210.0,
+      "rating": 4.5,
+      "opening_hours": {
+        "always_open": false,
+        "weekly": {
+          "0": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "1": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "2": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "3": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "4": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "5": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ],
+          "6": [
+            {
+              "open": "12:00",
+              "close": "15:30"
+            },
+            {
+              "open": "19:00",
+              "close": "22:30"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

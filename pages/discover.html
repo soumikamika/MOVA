@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MOVA Discover — search India's destinations and lesser-known places from structured and live geographic sources.">
+    <title>Discover — MOVA</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/discover.css">
+</head>
+<body>
+<div class="site-background">
+    <div class="site-shell">
+        <header id="navbar"></header>
+        <main class="discover-page">
+            <section class="discover-hero">
+                <div class="discover-hero-copy">
+                    <div class="section-number">01 / DISCOVERY ENGINE</div>
+                    <h1>FIND YOUR<br><span>NEXT PLACE.</span></h1>
+                    <p>Search beyond famous destinations. MOVA combines its structured destination index with live geographic discovery so smaller towns, waterfalls, viewpoints, heritage sites and local places can surface too.</p>
+                    <div class="discover-hero-actions">
+                        <a class="btn btn-primary" href="create-plan.html">MAKE A PLAN <span>↗</span></a>
+                        <a class="btn btn-secondary" href="#india-index">BROWSE INDIA <span>↓</span></a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="discover-command" id="india-index">
+                <div class="discover-command-top">
+                    <div>
+                        <div class="section-number">02 / INDIA INDEX + LIVE SEARCH</div>
+                        <h2>SEARCH LIKE A TRAVELLER.</h2>
+                    </div>
+                    <div class="discover-data-badge"><span></span> SOURCED DISCOVERY</div>
+                </div>
+                <div class="discover-search-wrap">
+                    <span class="search-mark">⌕</span>
+                    <input id="discover-search" type="search" placeholder="Try: Gandikota, waterfall near Araku, fort, temple, beach..." autocomplete="off" aria-label="Search places in India">
+                    <button id="discover-clear" type="button" class="discover-clear" aria-label="Clear search" hidden>×</button>
+                </div>
+                <div class="discover-search-hint" id="discover-search-status">TYPE 3+ CHARACTERS TO SEARCH BEYOND MOVA'S CURATED INDEX.</div>
+                <div class="discover-intents" id="discover-intents" role="group" aria-label="Discovery intent">
+                    <button class="intent-button active" type="button" data-intent="all">ALL</button>
+                    <button class="intent-button" type="button" data-intent="nature">NATURE</button>
+                    <button class="intent-button" type="button" data-intent="heritage">HERITAGE</button>
+                    <button class="intent-button" type="button" data-intent="coast">COAST</button>
+                    <button class="intent-button" type="button" data-intent="mountains">MOUNTAINS</button>
+                    <button class="intent-button" type="button" data-intent="food">FOOD</button>
+                </div>
+            </section>
+
+            <section class="discover-explorer">
+                <div class="discover-section-head">
+                    <div>
+                        <div class="section-number">03 / INDIA PLACES</div>
+                        <h2>OPEN A STATE. OPEN A CITY.</h2>
+                    </div>
+                    <div class="discover-count" id="discover-count">0 PLACES</div>
+                </div>
+                <div class="discover-index-toolbar">
+                    <div class="discover-regions" id="discover-regions" role="group" aria-label="Filter by region"></div>
+                    <select id="discover-sort" class="discover-sort-select" aria-label="Sort destinations">
+                        <option value="relevance">Best match</option>
+                        <option value="az">A-Z</option>
+                        <option value="complete">Most complete data</option>
+                    </select>
+                </div>
+                <div id="discover-grid" class="discover-grid" aria-live="polite"></div>
+            </section>
+
+            <section id="discover-live-results" class="discover-live-results" hidden>
+                <div class="discover-section-head">
+                    <div>
+                        <div class="section-number">04 / LIVE GEOGRAPHIC DISCOVERY</div>
+                        <h2>LOOK BEYOND THE INDEX.</h2>
+                    </div>
+                    <div class="discover-count" id="discover-live-count">0 RESULTS</div>
+                </div>
+                <div class="live-discovery-note">These results come from OpenStreetMap search. They are external records, not automatically verified MOVA places. Save them or open the detail page to inspect available sources.</div>
+                <div id="discover-live-grid" class="discover-grid" aria-live="polite"></div>
+            </section>
+
+            <section class="discover-data-note">
+                <div class="data-note-stamp">DATA, NOT GUESSWORK</div>
+                <div>
+                    <h2>DISCOVERY SHOULD SCALE WITHOUT INVENTING PLACES.</h2>
+                    <p>States and cities are entry points, not the final destination. Open one and MOVA discovers the real attractions, heritage sites, temples, nature spots and other mapped places inside it. Unknown facts stay unknown until a source provides them.</p>
+                </div>
+                <a class="text-link" href="community.html">SEE TRAVELLER KNOWLEDGE →</a>
+            </section>
+
+            <section class="discover-how">
+                <div class="section-number">05 / FROM SEARCH TO TRIP</div>
+                <h2>FIND IT. CHECK IT. PLAN IT.</h2>
+                <div class="discover-how-grid">
+                    <article><span class="how-number">01</span><h3>DISCOVER</h3><p>Search states, cities, landmarks and less-popular places through structured and live geographic data.</p></article>
+                    <article><span class="how-number">02</span><h3>INSPECT</h3><p>Open a place to see sourced facts, map location, practical information and provenance before trusting it.</p></article>
+                    <article><span class="how-number">03</span><h3>PLAN</h3><p>Send places into My Plans, where the future planning engine can check time, travel, budget and constraints.</p></article>
+                </div>
+            </section>
+        </main>
+        <footer id="footer"></footer>
+    </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="../js/firebase-config.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/global.js"></script>
+<script src="../js/discover.js"></script>
+</body>
+</html>

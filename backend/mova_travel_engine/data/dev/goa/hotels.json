@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "dataset": "goa_dev",
+    "schema_version": 1,
+    "data_source": "synthetic_dev",
+    "generated_at": "2026-10-02T15:19:15.676824Z",
+    "generated_by": "app.data.dev_data",
+    "seed": 42,
+    "disclaimer": "SYNTHETIC DEVELOPMENT DATA - NOT REAL TRAVEL INFORMATION. Landmark names/locations are approximate; all other attributes are generated for testing only."
+  },
+  "records": [
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_hotel_calangute_budget",
+      "destination_id": "goa",
+      "name": "DEV Budget Stay - Calangute",
+      "category": "budget",
+      "location": {
+        "latitude": 15.54454,
+        "longitude": 73.75179
+      },
+      "price_per_night_inr": 1400.0,
+      "max_occupancy_per_room": 2,
+      "rating": 3.9,
+      "amenities": [
+        "wifi"
+      ]
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_hotel_calangute_midrange",
+      "destination_id": "goa",
+      "name": "DEV Midrange Stay - Calangute",
+      "category": "midrange",
+      "location": {
+        "latitude": 15.54361,
+        "longitude": 73.75468
+      },
+      "price_per_night_inr": 4900.0,
+      "max_occupancy_per_room": 3,
+      "rating": 4.4,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "air_conditioning"
+      ]
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_hotel_calangute_premium",
+      "destination_id": "goa",
+      "name": "DEV Premium Stay - Calangute",
+      "category": "premium",
+      "location": {
+        "latitude": 15.54048,
+        "longitude": 73.75582
+      },
+      "price_per_night_inr": 9000.0,
+      "max_occupancy_per_room": 3,
+      "rating": 4.6,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "pool",
+        "air_conditioning"
+      ]
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_hotel_anjuna_budget",
+      "destination_id": "goa",
+      "name": "DEV Budget Stay - Anjuna",
+      "category": "budget",
+      "location": {
+        "latitude": 15.57755,
+        "longitude": 73.74078
+      },
+      "price_per_night_inr": 1700.0,
+      "max_occupancy_per_room": 2,
+      "rating": 3.9,
+      "amenities": [
+        "wifi"
+      ]
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_hotel_anjuna_midrange",
+      "destination_id": "goa",
+      "name": "DEV Midrange Stay - Anjuna",
+      "category": "midrange",
+      "location": {
+        "latitude": 15.57023,
+        "longitude": 73.7422
+      },
+      "price_per_night_inr": 6200.0,
+      "max_occupancy_per_room": 3,
+      "rating": 4.4,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "air_conditioning"
+      ]
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_hotel_panaji_midrange",
+      "destination_id": "goa",
+      "name": "DEV Midrange Stay - Panaji",
+      "category": "midrange",
+      "location": {
+        "latitude": 15.50028,
+        "longitude": 73.82913
+      },
+      "price_per_night_inr": 6500.0,
+      "max_occupancy_per_room": 3,
+      "rating": 4.2,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "air_conditioning"
+      ]
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_hotel_panaji_premium",
+      "destination_id": "goa",
+      "name": "DEV Premium Stay - Panaji",
+      "category": "premium",
+      "location": {
+        "latitude": 15.49842,
+        "longitude": 73.82994
+      },
+      "price_per_night_inr": 11300.0,
+      "max_occupancy_per_room": 3,
+      "rating": 4.3,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "pool",
+        "air_conditioning"
+      ]
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_hotel_colva_midrange",
+      "destination_id": "goa",
+      "name": "DEV Midrange Stay - Colva",
+      "category": "midrange",
+      "location": {
+        "latitude": 15.28158,
+        "longitude": 73.92067
+      },
+      "price_per_night_inr": 6400.0,
+      "max_occupancy_per_room": 3,
+      "rating": 4.0,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "air_conditioning"
+      ]
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_hotel_colva_luxury",
+      "destination_id": "goa",
+      "name": "DEV Luxury Stay - Colva",
+      "category": "luxury",
+      "location": {
+        "latitude": 15.27719,
+        "longitude": 73.92496
+      },
+      "price_per_night_inr": 17400.0,
+      "max_occupancy_per_room": 4,
+      "rating": 4.6,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "pool",
+        "spa",
+        "air_conditioning"
+      ]
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_hotel_palolem_budget",
+      "destination_id": "goa",
+      "name": "DEV Budget Stay - Palolem",
+      "category": "budget",
+      "location": {
+        "latitude": 15.01133,
+        "longitude": 74.02657
+      },
+      "price_per_night_inr": 1400.0,
+      "max_occupancy_per_room": 2,
+      "rating": 3.9,
+      "amenities": [
+        "wifi"
+      ]
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_hotel_palolem_premium",
+      "destination_id": "goa",
+      "name": "DEV Premium Stay - Palolem",
+      "category": "premium",
+      "location": {
+        "latitude": 15.00946,
+        "longitude": 74.02286
+      },
+      "price_per_night_inr": 8400.0,
+      "max_occupancy_per_room": 3,
+      "rating": 4.6,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "pool",
+        "air_conditioning"
+      ]
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_hotel_candolim_premium",
+      "destination_id": "goa",
+      "name": "DEV Premium Stay - Candolim",
+      "category": "premium",
+      "location": {
+        "latitude": 15.52163,
+        "longitude": 73.76061
+      },
+      "price_per_night_inr": 12600.0,
+      "max_occupancy_per_room": 3,
+      "rating": 4.5,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "pool",
+        "air_conditioning"
+      ]
+    },
+    {
+      "source": "synthetic_dev",
+      "last_updated": "2026-10-02T15:19:15.676824Z",
+      "confidence": 0.1,
+      "id": "goa_hotel_candolim_luxury",
+      "destination_id": "goa",
+      "name": "DEV Luxury Stay - Candolim",
+      "category": "luxury",
+      "location": {
+        "latitude": 15.52145,
+        "longitude": 73.75958
+      },
+      "price_per_night_inr": 14500.0,
+      "max_occupancy_per_room": 4,
+      "rating": 4.9,
+      "amenities": [
+        "wifi",
+        "breakfast",
+        "pool",
+        "spa",
+        "air_conditioning"
+      ]
+    }
+  ]
+}

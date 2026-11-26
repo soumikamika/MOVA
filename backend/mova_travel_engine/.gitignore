@@ -1,0 +1,18 @@
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.idea/
+.vscode/
+*.db
+*.sqlite3
+# trained artifacts and generated data are reproducible; keep folders, not contents
+models/*
+!models/README.md
+data/processed/*
+data/training/*
+data/evaluation/*
+data/raw/*
+!data/*/.gitkeep

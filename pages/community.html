@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MOVA Community — real travel stories, tips and experiences from people exploring India.">
+    <title>Community — MOVA</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/community.css">
+</head>
+<body>
+    <div class="site-background">
+        <div class="site-shell">
+            <header id="navbar"></header>
+
+            <main class="community-page">
+                <section class="community-hero">
+                    <div class="community-hero-copy">
+                        <div class="section-number">01 / TRAVEL TOGETHER</div>
+                        <h1>REAL TRIPS.<br><span>REAL PEOPLE.</span></h1>
+                        <p>
+                            Discover places through the people who actually went there.
+                            Share a story, save a tip, or add a place to your next plan.
+                        </p>
+                        <div class="community-hero-actions">
+                            <button class="btn btn-primary" id="open-post-modal" data-requires-auth>SHARE YOUR TRIP <span>↗</span></button>
+                            <a class="btn btn-secondary" href="discover.html">EXPLORE PLACES <span>→</span></a>
+                        </div>
+                    </div>
+                    <div class="community-hero-board" aria-label="Community features">
+                        <div class="board-line board-line-one">SHOW US INDIA</div>
+                        <div class="board-line board-line-two">YOUR ROUTE · YOUR FOOD · YOUR STORY</div>
+                        <div class="board-stamps">
+                            <span>STORIES</span>
+                            <span>TIPS</span>
+                            <span>GUIDES</span>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="community-layout">
+                    <div class="community-feed-column">
+                        <div class="community-toolbar">
+                            <div>
+                                <div class="section-number">02 / COMMUNITY FEED</div>
+                                <h2>WHAT TRAVELLERS ARE SHARING</h2>
+                            </div>
+                            <div class="community-search-wrap">
+                                <label class="sr-only" for="community-search">Search community</label>
+                                <input id="community-search" type="search" placeholder="Search places, stories, tips...">
+                            </div>
+                        </div>
+
+                        <div class="community-filter-row" role="group" aria-label="Filter community posts">
+                            <button class="community-filter active" data-filter="all" type="button">ALL</button>
+                            <button class="community-filter" data-filter="story" type="button">STORIES</button>
+                            <button class="community-filter" data-filter="guide" type="button">GUIDES</button>
+                            <button class="community-filter" data-filter="tip" type="button">TIPS</button>
+                            <button class="community-filter" data-filter="photo" type="button">PHOTOS</button>
+                        </div>
+
+                        <div id="community-feed" class="community-feed" aria-live="polite"></div>
+                    </div>
+
+                    <aside class="community-sidebar">
+                        <div class="community-side-card share-card">
+                            <div class="side-card-kicker">YOUR TURN</div>
+                            <h3>YOU KNOW A PLACE WORTH SHARING?</h3>
+                            <p>Post a real experience. Add useful details. Help the next traveller make a better plan.</p>
+                            <button class="btn btn-secondary" id="sidebar-post-button" data-requires-auth type="button">CREATE A POST</button>
+                        </div>
+
+                        <div class="community-side-card community-guidelines-card">
+                            <div class="side-card-kicker">COMMUNITY GUIDELINES</div>
+                            <h3>KEEP IT USEFUL. KEEP IT REAL.</h3>
+                            <div class="community-guideline-columns">
+                                <div class="guideline-block guideline-do">
+                                    <strong>DO</strong>
+                                    <ul class="community-rules">
+                                        <li><span>01</span> Share what you actually experienced.</li>
+                                        <li><span>02</span> Add practical details like cost, timing, access or transport.</li>
+                                        <li><span>03</span> Use specific place names and useful context.</li>
+                                        <li><span>04</span> Respect local communities, workers and other travellers.</li>
+                                    </ul>
+                                </div>
+                                <div class="guideline-block guideline-dont">
+                                    <strong>DON'T</strong>
+                                    <ul class="community-rules">
+                                        <li><span>01</span> Post spam, ads or repeated promotional content.</li>
+                                        <li><span>02</span> Invent prices, timings, access rules or experiences.</li>
+                                        <li><span>03</span> Share private information about other people.</li>
+                                        <li><span>04</span> Harass, insult or target other community members.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="community-side-card add-plan-card">
+                            <div class="side-card-kicker">FROM COMMUNITY → MY PLANS</div>
+                            <h3>FOUND SOMETHING GOOD?</h3>
+                            <p>Save a place from a post. We will use it as a planning suggestion when the planner is connected.</p>
+                            <a class="text-link" href="plans.html">OPEN MY PLANS →</a>
+                        </div>
+                    </aside>
+                </section>
+
+                <section class="community-how">
+                    <div class="section-number">03 / HOW IT CONNECTS</div>
+                    <div class="community-how-grid">
+                        <article>
+                            <span class="how-number">01</span>
+                            <h3>DISCOVER</h3>
+                            <p>Find places, stories and local knowledge from the community.</p>
+                        </article>
+                        <article>
+                            <span class="how-number">02</span>
+                            <h3>SAVE</h3>
+                            <p>Keep useful places and tips close while you build your trip.</p>
+                        </article>
+                        <article>
+                            <span class="how-number">03</span>
+                            <h3>PLAN</h3>
+                            <p>Turn community discoveries into candidates for your itinerary.</p>
+                        </article>
+                    </div>
+                </section>
+            </main>
+
+            <footer id="footer"></footer>
+        </div>
+    </div>
+
+    <dialog id="post-dialog" class="community-dialog" aria-labelledby="post-dialog-title">
+        <div class="dialog-header">
+            <div>
+                <div class="section-number">SHARE WITH THE COMMUNITY</div>
+                <h2 id="post-dialog-title">TELL US ABOUT THE TRIP.</h2>
+            </div>
+            <button class="dialog-close" id="close-post-modal" type="button" aria-label="Close">×</button>
+        </div>
+
+        <form id="community-post-form" data-requires-auth>
+            <div class="form-grid two-col">
+                <label>
+                    Post type
+                    <select name="type" required>
+                        <option value="story">Story</option>
+                        <option value="guide">Guide</option>
+                        <option value="tip">Tip</option>
+                        <option value="photo">Photo</option>
+                    </select>
+                </label>
+                <label>
+                    Place / destination
+                    <select name="location" id="post-location" required>
+                        <option value="">Choose a place</option>
+                    </select>
+                </label>
+            </div>
+
+            <label>
+                Caption
+                <textarea name="caption" rows="4" maxlength="600" placeholder="What should another traveller know?" required></textarea>
+            </label>
+
+            <div class="form-grid two-col">
+                <label>
+                    Approx. cost per person
+                    <input name="cost" type="number" min="0" step="1" placeholder="Optional">
+                </label>
+                <label>
+                    Experience rating
+                    <select name="rating">
+                        <option value="">Not rated</option>
+                        <option value="1">1 / 5</option>
+                        <option value="2">2 / 5</option>
+                        <option value="3">3 / 5</option>
+                        <option value="4">4 / 5</option>
+                        <option value="5">5 / 5</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="form-grid two-col">
+                <label>
+                    State / region tag (optional)
+                    <input name="regionName" id="post-region-name" type="text" maxlength="100" placeholder="e.g. Telangana, Goa, Rajasthan">
+                </label>
+                <label>
+                    Best time
+                    <input name="bestTime" type="text" maxlength="80" placeholder="e.g. October mornings">
+                </label>
+                <label>
+                    Tags
+                    <input name="tags" type="text" maxlength="120" placeholder="food, hidden-gem, budget">
+                </label>
+            </div>
+
+            <label>
+                Traveller tip
+                <textarea name="tip" rows="3" maxlength="300" placeholder="A practical detail worth knowing..."></textarea>
+            </label>
+
+            <label class="upload-field">
+                <span>Photo</span>
+                <input id="post-image" name="image" type="file" accept="image/*">
+                <small>Optional. Images stay in this browser for now; backend media storage will come later.</small>
+            </label>
+            <div id="post-image-preview" class="post-image-preview" hidden></div>
+
+            <div class="dialog-actions">
+                <button class="btn btn-secondary" id="cancel-post" type="button">CANCEL</button>
+                <button class="btn btn-primary" type="submit">PUBLISH POST</button>
+            </div>
+            <p class="form-note" id="post-form-status" role="status"></p>
+        </form>
+    </dialog>
+
+    <dialog id="post-detail-dialog" class="community-dialog detail-dialog" aria-labelledby="post-detail-title">
+        <div id="post-detail-content"></div>
+    </dialog>
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="../js/firebase-config.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/global.js"></script>
+    <script src="../js/community.js"></script>
+</body>
+</html>

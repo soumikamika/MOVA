@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MOVA place details — practical information, exploration ideas, map and community knowledge.">
+    <title>Place Details — MOVA</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/place-details.css">
+</head>
+<body>
+<div class="site-background">
+    <div class="site-shell">
+        <header id="navbar"></header>
+        <main class="place-details-page is-loading" id="place-page">
+            <div class="back-nav"><a href="discover.html" class="btn btn-secondary">← BACK TO DISCOVER</a></div>
+
+            <section class="place-hero">
+                <div class="place-hero-media" id="place-hero-media">
+                    <div class="hero-image-skeleton skeleton-block"></div>
+                    <div class="place-hero-image" id="place-hero-image" hidden></div>
+                </div>
+                <div class="place-header">
+                    <div class="section-number skeleton-text skeleton-region" id="place-region">LOADING...</div>
+                    <h1 id="place-title"><span class="skeleton-title skeleton-text">LOADING PLACE</span></h1>
+                    <div class="place-meta" id="place-meta"><span class="meta-skeleton skeleton-pill"></span><span class="meta-skeleton skeleton-pill"></span></div>
+                </div>
+                <div class="place-actions">
+                    <button class="btn btn-primary" id="btn-add-plan" disabled>ADD TO MY PLAN <span>↗</span></button>
+                </div>
+            </section>
+
+            <div class="place-grid">
+                <div class="place-content">
+                    <div class="place-tabs" role="tablist" aria-label="Place information">
+                        <button class="tab-button active" type="button" data-tab="overview" role="tab" aria-selected="true">OVERVIEW</button>
+                        <button class="tab-button" type="button" data-tab="practical" role="tab" aria-selected="false">PRACTICAL INFO</button>
+                        <button class="tab-button" type="button" data-tab="explore" role="tab" aria-selected="false">EXPLORE</button>
+                        <button class="tab-button" type="button" data-tab="community" role="tab" aria-selected="false">COMMUNITY</button>
+                    </div>
+
+                    <section class="tab-content active" id="tab-overview" role="tabpanel">
+                        <div id="place-overview-content" class="content-box loading-panel" aria-live="polite">
+                            <div class="skeleton-line skeleton-wide"></div><div class="skeleton-line"></div><div class="skeleton-line skeleton-medium"></div>
+                        </div>
+                    </section>
+                    <section class="tab-content" id="tab-practical" role="tabpanel" hidden>
+                        <div id="place-practical-content" class="practical-grid loading-panel" aria-live="polite">
+                            <div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div><div class="skeleton-card"></div>
+                        </div>
+                    </section>
+                    <section class="tab-content" id="tab-explore" role="tabpanel" hidden>
+                        <div id="place-explore-content" class="content-box loading-panel" aria-live="polite">
+                            <div class="skeleton-line skeleton-wide"></div><div class="skeleton-line"></div><div class="skeleton-line skeleton-medium"></div>
+                        </div>
+                    </section>
+                    <section class="tab-content" id="tab-community" role="tabpanel" hidden>
+                        <div class="community-header">
+                            <div class="section-number">04 / TRAVELLER KNOWLEDGE</div>
+                            <h3>COMMUNITY POSTS</h3>
+                            <p>Only MOVA community posts linked to this place appear here. No simulated reviews.</p>
+                        </div>
+                        <div id="place-community-content" class="community-grid"></div>
+                    </section>
+                </div>
+
+                <aside class="place-sidebar">
+                    <div class="map-card">
+                        <div class="map-card-head"><span>LOCATION</span><span id="map-source">LOADING MAP</span></div>
+                        <div class="map-container"><div id="place-map"><div class="map-skeleton skeleton-block"></div></div></div>
+                    </div>
+                    <div class="sidebar-box">
+                        <div class="sidebar-box-label">QUICK FACTS</div>
+                        <h3>WHAT WE KNOW</h3>
+                        <div id="sidebar-highlights" class="loading-panel"><div class="skeleton-line"></div><div class="skeleton-line skeleton-medium"></div><div class="skeleton-line"></div></div>
+                    </div>
+                    <div class="sidebar-box source-box">
+                        <div class="sidebar-box-label">PROVENANCE</div>
+                        <h3>WHERE THIS CAME FROM</h3>
+                        <div id="place-sources"><p class="skeleton-line"></p><p class="skeleton-line skeleton-medium"></p></div>
+                    </div>
+                </aside>
+            </div>
+        </main>
+        <footer id="footer"></footer>
+    </div>
+</div>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="../js/firebase-config.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/global.js"></script>
+<script src="../js/place-details.js"></script>
+</body>
+</html>

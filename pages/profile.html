@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Profile — MOVA</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/profile.css">
+
+</head>
+
+
+<body data-auth-required="true">
+
+    <div class="site-background">
+
+        <div class="site-shell">
+
+            <header id="navbar"></header>
+
+
+            <main class="profile-page">
+
+                <section class="profile-header" aria-labelledby="profile-display-name">
+
+                    <div class="profile-identity">
+
+                        <div class="profile-avatar-wrap">
+
+                            <div
+                                id="profile-avatar"
+                                class="profile-avatar"
+                                aria-hidden="true"
+                            >
+                                ✦
+                            </div>
+
+                            <label class="avatar-upload-label">
+                                <span class="visually-hidden">
+                                    Add a local profile photo
+                                </span>
+                                <input
+                                    type="file"
+                                    id="avatar-upload"
+                                    accept="image/jpeg,image/png,image/webp"
+                                    aria-label="Choose a local profile photo"
+                                >
+                                <span aria-hidden="true">PHOTO</span>
+                            </label>
+                            <p id="avatar-status" class="avatar-status" role="status" aria-live="polite"></p>
+
+                        </div>
+
+
+                        <div class="profile-identity-copy">
+
+                            <div class="section-number">
+                                YOUR HUB
+                            </div>
+
+                            <p
+                                id="profile-username"
+                                class="profile-username"
+                            >
+                                @traveller
+                            </p>
+
+                            <h1 id="profile-display-name">
+                                YOUR
+                                <span>PROFILE.</span>
+                            </h1>
+
+                            <p
+                                id="profile-bio"
+                                class="profile-bio"
+                            >
+                                Tell MOVA who you are and how you like to travel.
+                            </p>
+
+                            <p
+                                id="profile-location"
+                                class="profile-location"
+                                hidden
+                            ></p>
+
+
+                            <div class="profile-header-actions">
+
+                                <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                    id="edit-profile-button"
+                                >
+                                    EDIT PROFILE
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    id="open-settings-button"
+                                    aria-controls="settings-panel"
+                                >
+                                    SETTINGS
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <dl
+                        id="profile-stats"
+                        class="profile-stats"
+                    ></dl>
+
+                </section>
+
+
+                <div
+                    class="profile-tabs-wrap"
+                    id="profile-main-ui"
+                >
+
+                    <div
+                        class="profile-tablist"
+                        role="tablist"
+                        aria-label="Profile sections"
+                    >
+
+                        <button
+                            type="button"
+                            class="profile-tab"
+                            role="tab"
+                            id="tab-overview"
+                            aria-controls="panel-overview"
+                            aria-selected="true"
+                            data-tab="overview"
+                        >
+                            Overview
+                        </button>
+
+                        <button
+                            type="button"
+                            class="profile-tab"
+                            role="tab"
+                            id="tab-trips"
+                            aria-controls="panel-trips"
+                            aria-selected="false"
+                            tabindex="-1"
+                            data-tab="trips"
+                        >
+                            My Trips
+                        </button>
+
+                        <button
+                            type="button"
+                            class="profile-tab"
+                            role="tab"
+                            id="tab-saved"
+                            aria-controls="panel-saved"
+                            aria-selected="false"
+                            tabindex="-1"
+                            data-tab="saved"
+                        >
+                            Saved
+                        </button>
+
+                        <button
+                            type="button"
+                            class="profile-tab"
+                            role="tab"
+                            id="tab-preferences"
+                            aria-controls="panel-preferences"
+                            aria-selected="false"
+                            tabindex="-1"
+                            data-tab="preferences"
+                        >
+                            Travel Preferences
+                        </button>
+
+                        <button
+                            type="button"
+                            class="profile-tab"
+                            role="tab"
+                            id="tab-posts"
+                            aria-controls="panel-posts"
+                            aria-selected="false"
+                            tabindex="-1"
+                            data-tab="posts"
+                        >
+                            My Posts
+                        </button>
+
+                        <button
+                            type="button"
+                            class="profile-tab"
+                            role="tab"
+                            id="tab-comments"
+                            aria-controls="panel-comments"
+                            aria-selected="false"
+                            tabindex="-1"
+                            data-tab="comments"
+                        >
+                            Comments
+                        </button>
+
+                        <button
+                            type="button"
+                            class="profile-tab"
+                            role="tab"
+                            id="tab-friends"
+                            aria-controls="panel-friends"
+                            aria-selected="false"
+                            tabindex="-1"
+                            data-tab="friends"
+                        >
+                            Friends
+                        </button>
+
+                    </div>
+
+
+                    <section
+                        class="profile-panel"
+                        role="tabpanel"
+                        id="panel-overview"
+                        aria-labelledby="tab-overview"
+                        data-panel="overview"
+                    >
+
+                        <div class="profile-grid">
+
+                            <article class="profile-card">
+
+                                <span class="profile-card-label">
+                                    ABOUT YOU
+                                </span>
+
+                                <h2>Bio</h2>
+
+                                <p id="overview-bio"></p>
+
+                            </article>
+
+
+                            <article class="profile-card">
+
+                                <span class="profile-card-label">
+                                    HOW YOU TRAVEL
+                                </span>
+
+                                <h2>Preferences</h2>
+
+                                <dl
+                                    id="overview-preferences"
+                                    class="preference-summary"
+                                ></dl>
+
+                            </article>
+
+
+                            <article class="profile-card profile-card-wide">
+
+                                <div class="profile-card-heading">
+
+                                    <div>
+
+                                        <span class="profile-card-label">
+                                            RECENT TRIPS
+                                        </span>
+
+                                        <h2>From My Plans</h2>
+
+                                    </div>
+
+                                    <a href="plans.html" class="text-link">
+                                        Open My Plans →
+                                    </a>
+
+                                </div>
+
+                                <div id="overview-trips"></div>
+
+                            </article>
+
+
+                            <article class="profile-card">
+
+                                <span class="profile-card-label">
+                                    COLLECTION
+                                </span>
+
+                                <h2>Saved</h2>
+
+                                <div id="overview-saved"></div>
+
+                            </article>
+
+
+                            <article class="profile-card">
+
+                                <span class="profile-card-label">
+                                    COMMUNITY
+                                </span>
+
+                                <h2>Activity</h2>
+
+                                <div id="overview-activity"></div>
+
+                            </article>
+
+                        </div>
+
+                    </section>
+
+
+                    <section
+                        class="profile-panel"
+                        role="tabpanel"
+                        id="panel-trips"
+                        aria-labelledby="tab-trips"
+                        data-panel="trips"
+                        hidden
+                    >
+
+                        <div class="profile-card-heading panel-heading">
+
+                            <div>
+
+                                <span class="profile-card-label">
+                                    MOVA PLANS
+                                </span>
+
+                                <h2>My trips</h2>
+
+                            </div>
+
+                            <a href="create-plan.html" class="btn btn-primary">
+                                CREATE A PLAN
+                                <span class="button-arrow">→</span>
+                            </a>
+
+                        </div>
+
+                        <div id="trips-list" class="trips-list"></div>
+
+                    </section>
+
+
+                    <section
+                        class="profile-panel"
+                        role="tabpanel"
+                        id="panel-saved"
+                        aria-labelledby="tab-saved"
+                        data-panel="saved"
+                        hidden
+                    >
+
+                        <div class="saved-filters" role="group" aria-label="Saved categories">
+
+                            <button
+                                type="button"
+                                class="chip-button is-on"
+                                data-saved-filter="all"
+                            >
+                                All
+                            </button>
+
+                            <button
+                                type="button"
+                                class="chip-button"
+                                data-saved-filter="destinations"
+                            >
+                                Destinations
+                            </button>
+
+                            <button
+                                type="button"
+                                class="chip-button"
+                                data-saved-filter="places"
+                            >
+                                Places
+                            </button>
+
+                            <button
+                                type="button"
+                                class="chip-button"
+                                data-saved-filter="guides"
+                            >
+                                Guides
+                            </button>
+
+                            <button
+                                type="button"
+                                class="chip-button"
+                                data-saved-filter="posts"
+                            >
+                                Posts
+                            </button>
+
+                        </div>
+
+                        <div id="saved-list" class="saved-list"></div>
+
+                    </section>
+
+
+                    <section
+                        class="profile-panel"
+                        role="tabpanel"
+                        id="panel-preferences"
+                        aria-labelledby="tab-preferences"
+                        data-panel="preferences"
+                        hidden
+                    >
+
+                        <form id="preferences-form" class="preferences-form">
+
+                            <fieldset class="profile-card">
+
+                                <legend>Travel style</legend>
+
+                                <div
+                                    class="chip-row"
+                                    id="travel-style-options"
+                                ></div>
+
+                            </fieldset>
+
+
+                            <fieldset class="profile-card">
+
+                                <legend>Interests</legend>
+
+                                <div
+                                    class="chip-row"
+                                    id="interest-options"
+                                ></div>
+
+                            </fieldset>
+
+
+                            <fieldset class="profile-card">
+
+                                <legend>Dislikes</legend>
+
+                                <div
+                                    class="chip-row"
+                                    id="dislike-options"
+                                ></div>
+
+                            </fieldset>
+
+
+                            <fieldset class="profile-card">
+
+                                <legend>Transport</legend>
+
+                                <div
+                                    class="chip-row"
+                                    id="transport-options"
+                                ></div>
+
+                            </fieldset>
+
+
+                            <div class="preference-grid">
+
+                                <div class="profile-card">
+
+                                    <label for="budget-preference">
+                                        Budget preference
+                                    </label>
+
+                                    <select
+                                        id="budget-preference"
+                                        name="budgetPreference"
+                                        class="profile-select"
+                                    >
+                                        <option value="">Not set</option>
+                                        <option value="budget">Budget</option>
+                                        <option value="moderate">Moderate</option>
+                                        <option value="comfort">Comfort</option>
+                                    </select>
+
+                                </div>
+
+
+                                <div class="profile-card">
+
+                                    <label for="pace-preference">
+                                        Preferred trip pace
+                                    </label>
+
+                                    <select
+                                        id="pace-preference"
+                                        name="pace"
+                                        class="profile-select"
+                                    >
+                                        <option value="">Not set</option>
+                                        <option value="relaxed">Relaxed</option>
+                                        <option value="balanced">Balanced</option>
+                                        <option value="packed">Packed</option>
+                                    </select>
+
+                                </div>
+
+                            </div>
+
+
+                            <fieldset class="profile-card">
+
+                                <legend>Food preferences</legend>
+
+                                <div
+                                    class="chip-row"
+                                    id="food-options"
+                                ></div>
+
+                            </fieldset>
+
+
+                            <fieldset class="profile-card">
+
+                                <legend>Accessibility</legend>
+
+                                <div
+                                    class="chip-row"
+                                    id="accessibility-options"
+                                ></div>
+
+                            </fieldset>
+
+
+                            <div class="preferences-actions">
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary"
+                                >
+                                    SAVE PREFERENCES
+                                </button>
+
+                                <p
+                                    id="preferences-status"
+                                    class="form-status"
+                                    role="status"
+                                ></p>
+
+                            </div>
+
+                        </form>
+
+                    </section>
+
+
+                    <section
+                        class="profile-panel"
+                        role="tabpanel"
+                        id="panel-posts"
+                        aria-labelledby="tab-posts"
+                        data-panel="posts"
+                        hidden
+                    >
+                        <div class="profile-card-heading panel-heading">
+                            <div><span class="profile-card-label">COMMUNITY</span><h2>My Posts</h2></div>
+                            <a href="community.html" class="btn btn-primary">SHARE A POST →</a>
+                        </div>
+                        <div id="my-posts-list" class="community-profile-list"></div>
+                    </section>
+
+                    <section
+                        class="profile-panel"
+                        role="tabpanel"
+                        id="panel-comments"
+                        aria-labelledby="tab-comments"
+                        data-panel="comments"
+                        hidden
+                    >
+                        <div class="profile-card-heading panel-heading">
+                            <div><span class="profile-card-label">COMMUNITY</span><h2>My Comments</h2></div>
+                            <a href="community.html" class="btn btn-secondary">OPEN COMMUNITY →</a>
+                        </div>
+                        <div id="my-comments-list" class="community-profile-list"></div>
+                    </section>
+
+                    <section
+                        class="profile-panel"
+                        role="tabpanel"
+                        id="panel-friends"
+                        aria-labelledby="tab-friends"
+                        data-panel="friends"
+                        hidden
+                    >
+
+                        <div
+                            class="friends-subnav"
+                            role="tablist"
+                            aria-label="Connections"
+                        >
+
+                            <button
+                                type="button"
+                                class="profile-tab is-sub"
+                                data-friends-view="friends"
+                                aria-selected="true"
+                            >
+                                Friends
+                            </button>
+
+                            <button
+                                type="button"
+                                class="profile-tab is-sub"
+                                data-friends-view="following"
+                                aria-selected="false"
+                            >
+                                Following
+                            </button>
+
+                            <button
+                                type="button"
+                                class="profile-tab is-sub"
+                                data-friends-view="followers"
+                                aria-selected="false"
+                            >
+                                Followers
+                            </button>
+
+                        </div>
+
+                        <div id="friends-list"></div>
+
+                    </section>
+
+                </div>
+
+
+                <section
+                    id="settings-panel"
+                    class="settings-panel"
+                    hidden
+                    aria-labelledby="settings-heading"
+                >
+
+                    <div class="settings-top">
+
+                        <div>
+
+                            <span class="profile-card-label">
+                                ACCOUNT
+                            </span>
+
+                            <h2 id="settings-heading">
+                                Settings
+                            </h2>
+
+                        </div>
+
+                        <button
+                            type="button"
+                            class="btn btn-secondary"
+                            id="close-settings-button"
+                        >
+                            BACK TO PROFILE
+                        </button>
+
+                    </div>
+
+
+                    <div class="settings-grid">
+
+                        <article class="profile-card">
+
+                            <h3>Account</h3>
+
+                            <p class="setting-note" id="settings-auth-note">
+                                Signed in with Firebase Authentication.
+                            </p>
+
+                            <dl class="preference-summary" id="settings-auth-details">
+                                <div>
+                                    <dt>Email</dt>
+                                    <dd id="settings-auth-email">Checking account…</dd>
+                                </div>
+                                <div>
+                                    <dt>Sign-in method</dt>
+                                    <dd id="settings-auth-provider">Firebase</dd>
+                                </div>
+                            </dl>
+
+                            <div class="settings-account-actions">
+                                <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                    id="settings-edit-profile"
+                                >
+                                    EDIT PROFILE
+                                </button>
+
+                                <button
+                                    type="button"
+                                    class="btn btn-secondary"
+                                    data-sign-out
+                                >
+                                    SIGN OUT
+                                </button>
+                            </div>
+
+                        </article>
+
+
+                        <form
+                            id="settings-form"
+                            class="profile-card settings-form"
+                        >
+
+                            <h3>Preferences</h3>
+
+                            <label for="setting-language">
+                                Language
+                            </label>
+
+                            <select
+                                id="setting-language"
+                                name="language"
+                                class="profile-select"
+                            >
+                                <option value="en">English</option>
+                                <option value="hi">Hindi</option>
+                            </select>
+
+                            <p class="setting-note">
+                                Stored on this device. The site copy stays English until translations ship.
+                            </p>
+
+                            <label for="setting-currency">
+                                Currency
+                            </label>
+
+                            <select
+                                id="setting-currency"
+                                name="currency"
+                                class="profile-select"
+                            >
+                                <option value="INR">INR (₹)</option>
+                                <option value="USD">USD ($)</option>
+                                <option value="EUR">EUR (€)</option>
+                            </select>
+
+                            <p class="setting-note">
+                                Used to display amounts on this profile. Live conversion is not included yet.
+                            </p>
+
+
+                            <h3>Appearance</h3>
+
+                            <fieldset class="appearance-fieldset">
+
+                                <legend class="visually-hidden">
+                                    Colour theme
+                                </legend>
+
+                                <label class="choice-row">
+                                    <input
+                                        type="radio"
+                                        name="appearance"
+                                        value="light"
+                                    >
+                                    Light
+                                </label>
+
+                                <label class="choice-row">
+                                    <input
+                                        type="radio"
+                                        name="appearance"
+                                        value="dark"
+                                    >
+                                    Dark
+                                </label>
+
+                            </fieldset>
+
+
+                            <h3>Privacy</h3>
+
+                            <p class="setting-note">
+                                Saved locally only. There is no public profile server yet.
+                            </p>
+
+                            <label for="profile-visibility">
+                                Profile visibility
+                            </label>
+
+                            <select
+                                id="profile-visibility"
+                                name="profileVisibility"
+                                class="profile-select"
+                            >
+                                <option value="private">Private</option>
+                                <option value="friends">Friends</option>
+                                <option value="public">Public</option>
+                            </select>
+
+                            <label for="activity-visibility">
+                                Activity visibility
+                            </label>
+
+                            <select
+                                id="activity-visibility"
+                                name="activityVisibility"
+                                class="profile-select"
+                            >
+                                <option value="private">Private</option>
+                                <option value="friends">Friends</option>
+                                <option value="public">Public</option>
+                            </select>
+
+
+                            <h3>Notifications</h3>
+
+                            <p class="setting-note">
+                                These are preferences for later. No emails or push alerts are sent yet.
+                            </p>
+
+                            <label class="choice-row">
+                                <input
+                                    type="checkbox"
+                                    name="notifyCommunity"
+                                    id="notify-community"
+                                >
+                                Community notifications
+                            </label>
+
+                            <label class="choice-row">
+                                <input
+                                    type="checkbox"
+                                    name="notifyTrips"
+                                    id="notify-trips"
+                                >
+                                Trip notifications
+                            </label>
+
+                            <label class="choice-row">
+                                <input
+                                    type="checkbox"
+                                    name="notifyPlanning"
+                                    id="notify-planning"
+                                >
+                                Planning notifications
+                            </label>
+
+                            <button type="submit" class="btn btn-primary" id="save-settings-button">
+                                SAVE SETTINGS
+                            </button>
+
+                            <p
+                                id="settings-status"
+                                class="form-status"
+                                role="status"
+                            ></p>
+
+                        </form>
+
+                    </div>
+
+                </section>
+
+            </main>
+
+
+            <footer id="footer"></footer>
+
+        </div>
+
+    </div>
+
+
+    <dialog
+        id="edit-profile-dialog"
+        class="edit-dialog"
+        aria-labelledby="edit-profile-title"
+    >
+
+        <form id="edit-profile-form">
+
+            <h2 id="edit-profile-title">
+                Edit profile
+            </h2>
+
+            <p class="setting-note">
+                Profile details and photo are saved on this device.
+            </p>
+
+            <div class="edit-avatar-section">
+                <div
+                    id="edit-avatar-preview"
+                    class="profile-avatar edit-avatar-preview"
+                    aria-hidden="true"
+                >
+                    ✦
+                </div>
+                <div class="edit-avatar-controls">
+                    <label class="btn btn-secondary edit-avatar-upload-btn">
+                        <input
+                            type="file"
+                            id="edit-avatar-input"
+                            accept="image/jpeg,image/png,image/webp"
+                            aria-label="Choose a profile photo"
+                        >
+                        CHOOSE PHOTO
+                    </label>
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        id="remove-avatar-button"
+                    >
+                        REMOVE PHOTO
+                    </button>
+                </div>
+                <p id="edit-avatar-status" class="avatar-status" role="status" aria-live="polite"></p>
+            </div>
+
+            <label for="edit-display-name">
+                Display name
+            </label>
+
+            <input
+                type="text"
+                id="edit-display-name"
+                name="displayName"
+                class="profile-input"
+                maxlength="60"
+                autocomplete="nickname"
+            >
+
+            <label for="edit-username">
+                Username
+            </label>
+
+            <input
+                type="text"
+                id="edit-username"
+                name="username"
+                class="profile-input"
+                maxlength="24"
+                autocomplete="username"
+                pattern="([A-Za-z0-9_]{3,24})?"
+                title="Leave blank, or use 3–24 letters, numbers or underscores"
+            >
+
+            <label for="edit-bio">
+                Bio
+            </label>
+
+            <textarea
+                id="edit-bio"
+                name="bio"
+                class="profile-input profile-textarea"
+                maxlength="280"
+                rows="4"
+            ></textarea>
+
+            <label for="edit-location">
+                Location
+            </label>
+
+            <input
+                type="text"
+                id="edit-location"
+                name="location"
+                class="profile-input"
+                maxlength="80"
+                autocomplete="address-level2"
+            >
+
+            <div class="dialog-actions">
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                    value="save"
+                >
+                    SAVE
+                </button>
+
+                <button
+                    type="button"
+                    class="btn btn-secondary"
+                    id="cancel-edit-profile"
+                >
+                    CANCEL
+                </button>
+
+            </div>
+
+        </form>
+
+    </dialog>
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="../js/firebase-config.js"></script>
+<script src="../js/auth.js"></script>
+<script src="../js/global.js"></script>
+    <script src="../js/profile.js"></script>
+
+</body>
+
+</html>
